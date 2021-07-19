@@ -1,0 +1,38 @@
+{
+  "name": "gulp-start",
+  "version": "1.0.0",
+  "description": "start gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "postcss": "postcss ./app/css/tailwindtest.css -o ./app/css/mytailwind.css"
+  },
+  "author": "Vadim Prokopchuk",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1",
+    "postcss-import": "^14.0.2"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "jquery.maskedinput": "^1.4.1",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "slick-carousel": "^1.8.1",
+    "smooth-scrollbar": "^8.5.2",
+    "swiper": "^6.7.5",
+    "tailwindcss": "^2.2.4",
+    "wowjs": "^1.1.3"
+  }
+}

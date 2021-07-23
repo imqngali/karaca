@@ -87,6 +87,8 @@ module.exports = {
       '2.2rem' : '2.2rem',
       '1.2rem' : '1.2rem',
       '1.4rem' : '1.4rem',
+      '1rem' : '1rem',
+      '2rem' : '2rem',
       '2.4rem' : '2.4rem',
       '2.6rem' : '2.6rem',
       '2.8rem' : '2.8rem',

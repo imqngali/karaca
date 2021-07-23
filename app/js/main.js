@@ -1,52 +1,50 @@
-(function () {
-    function initSwiper() {
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 6,
-    
-            pagination: {
-                el:'.swiper-pagination'
+jQuery(document).ready(function($){
+    $('.images_contents').slick({
+        arrows: true,
+        // dots: true,
+        slidesToShow: 8,
+        slidesToScroll: 4,
+        prevArrow: $($('.arrs img')[0]),
+        nextArrow: $($('.arrs img')[1]),
+        infinite: true,
+        responsive:[
+            {
+                breakpoint: 1024,
+                settings:{
+                    slidesToShow: 5
+                }
             },
-            navigation: {
-                nextEl:'.swiper-button-next',
-                prevEl:'.swiper-button-prev',
+            {
+                breakpoint: 766,
+                settings:{
+                    slidesToShow: 3
+                }
             }
-        });
-            
-        var swiper2 = new Swiper('.banner-container',{
-            slidesPerView: 1,
-    
-            pagination: {
-                el:'.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-            },
-            navigation: {
-                nextEl:'.banner-button-next',
-                prevEl:'.banner-button-prev',
-            }
-        })
-        var swiper3 = new Swiper('.catalog', {
-            slidesPerView: 5, //Display 4 in a row
-            slidesPerColumn: 1.5, //Display 2 lines
-            slidesPerColumnFill: 'row', //Line layout
-            pagination: {
-                el: '.cat_paginator',
-                type: 'bullets',
-                clickable: true
-            },
-            navigation:{
-                nextEl:'.banner-button-next2',
-                prevEl:'.banner-button-prev2',
-            }
-        })
-    }
-    try {
-        initSwiper();
-    } catch (e) {
-        
-    }
-})()
-$(function($){
+        ]
+    })
+    $('.banner_slider').slick({
+        arrows: true,
+        slidesToShow: 1,
+        infinite: true,
+        prevArrow: $('.banner-button-prev'),
+        nextArrow: $('.banner-button-next'),
+        dots: true,
+        appendDots: $('.swiper-pagination')
+    })
+    $('.multiple_slider').slick({
+        infinite: false,
+        rows: 2,
+        slidesPerRow: 8,
+        variableWidth: false,
+        touchThreshold: 10,
+        centerMode: false,
+        appendDots: $('.cat_paginator'),
+        dots: true,
+        arrows: true,
+        prevArrow: $('.banner-button-prev2'),
+        nextArrow: $('.banner-button-next2')
+    })
+
     const states = {
         clickedFilter: false,
         clickCategories: $('.click_categories'),
@@ -57,11 +55,11 @@ $(function($){
         currentTab: 0
     }
     $('.product-card_buttons').click(function(e){
-        $('.modal').css("transform","scale(1)");
+        $('.custom_modal').css("transform","scale(1)");
     })
-    $(".modal").click(function(e){
+    $(".custom_modal").click(function(e){
         if(e.target == e.currentTarget){
-            $('.modal').css("transform","scale(0)")
+            $('.custom_modal').css("transform","scale(0)")
         }
     })
     $('.filter_btns_filter').click(function(e){

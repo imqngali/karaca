@@ -34,8 +34,25 @@ html{
 .header__main-links {
     display: flex;
     justify-content: flex-end;
+    &_mobile{
+        display: none;
+        justify-content: space-between;
+        &_burger{
+            width: 24px;
+            margin-left: 20px;
+            div{
+                width: 100%;
+                margin-top: 6px;
+                height: 2px;
+                border-radius: 2px;
+                background-color: black;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }
-
 .main-nav, .langs {
 display: inline-block;
 }
@@ -67,6 +84,10 @@ margin-right: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &_mobile{
+        display: none;
+        align-items: center;
+    }
 }
 
 .search-form_wrap {
@@ -224,6 +245,13 @@ input:focus {
     display: flex;
     height: 485px;
     justify-content: center;
+    &>div{
+        &:first-child{
+            &>div{
+                text-align: left;
+            }
+        }
+    }
     &_btns{
         width: 100% !important;
         .swiper-pagination{
@@ -388,6 +416,7 @@ img{
     margin-top: 0 !important;
     padding: 15px;
     width: 100%;
+    text-align: center;
     border-radius: 0.5rem;
     transition: 0.3s all;
     background: white;
@@ -445,41 +474,34 @@ img{
         height: 15px;
     }
 }
-
 .product-card_title {
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .product-card_descr {
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-height: 50px;
-color: #727187;
-margin: 5px;
+    font-size: 1rem;
+    color: #727187;
+    text-overflow: ellipsis;
+    height: 50px;
+    white-space: normal;
+    overflow: hidden;
 }
 
 .product-card_price {
     font-family: Montserrat;
-    font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #0b005d;
-    margin-top: 25px;
+    color: #0B005D ;
 }
 
 .product-card_img {
     width: 100%;
-    height: 224px;
+    object-fit: cover;
 }
 
 .callback_wrappper {
@@ -829,36 +851,36 @@ footer{
 
 .footer_cont {
     margin: 25px auto;
-// width: 100%;
-background-color: transparent;
-display: flex;
-justify-content: space-between;
-align-items: baseline;
-width: 80%;
-flex-wrap: wrap;
+    // width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 80%;
+    flex-wrap: wrap;
 }
 
 .footer_col {
-display: flex;
-flex-direction: column;
-align-self: end;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
 }
 
 .insta_block {
-margin-top: 22px;
+    margin-top: 22px;
 }
 
 .footer_col img {
-margin-right: 8px;
+    margin-right: 8px;
 }
 
 .insta_block_title {
-margin: 10px 0;
-display: flex;
-align-items: center;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
 
 /* identical to box height */
 
@@ -866,31 +888,31 @@ color: #ffffff;
 }
 
 .insta_info {
-display: flex;
-flex-direction: column;
-margin-left: 32px;
-width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    width: 60%;
 
-a {
-    margin: 5px 0;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-}
+    a {
+        margin: 5px 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+    }
 }
 
 .shop__filter__ul {
-list-style-type: none;
+    list-style-type: none;
 
-li, h4 {
-    padding: 5px;
-    background: #fafafa;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-}
+    li, h4 {
+        padding: 5px;
+        background: #fafafa;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+    }
 }
 
 .footer_col {
@@ -923,14 +945,181 @@ li, h4 {
         display: none;
     }
 }
+@media screen and (max-width: 1199px) {
+    .multiple_slider .slick-slide{
+        &>div{
+            &>div{
+                width: 30% !important;
+            }
+        }
+    }    
+}
 @media only screen and (max-width: 1092px) {
     .images_contents{
-        overflow: auto;
+        overflow: unset !important;
     }
 }
-@media only screen and (max-width: 1299px) {
-    .top_images_arrows{
+@media only screen and (max-width: 990px) {
+    .cats{
+        margin: 16px 0;
+    }
+    .header__funcs {
         display: none;
+        &_mobile{
+            display: flex;
+            .search-form_wrap{
+                width: 100%;
+                padding: 0;
+            }
+            .btns{
+                width: auto;
+                margin-left: 38px;
+                img{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .header__main-links {
+        display: none;
+        &_mobile{
+            #logo {
+                width: 140px;
+                height: 35.5px;
+                margin-bottom: 0;
+            }
+            margin-bottom: 24px;
+            display: flex;
+            &>div{
+                &:first-child{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .header__cats{
+        overflow-x: scroll;
+        margin-top: 24px;
+        .cats{
+            width: 1000px;
+            max-width: 1200px;
+        }
+    }
+    .multiple_slider .slick-slide{
+        &>div{
+            &>div{
+                width: 45% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner{
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        height: auto;
+        &>div{
+            &:first-child{
+                display: block;
+                div{
+                    text-align: center;
+                    width: 100%;
+                    padding: 20px
+                }
+            }
+        }
+    }
+    .multiple_slider .slick-slide{
+        &>div{
+            text-align: center;
+            &>div{
+                width: 42% !important;
+            }
+        }
+    }
+    .grad_banner{
+        flex-direction: column-reverse;
+        height: auto;
+        img{width: 100%;}
+        width: 100%;
+        border-top-right-radius: 30px;
+    }
+    .discount_block .container,.banner-container.container,.catalog.container{
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        .pagination_{
+            display: none;
+        }
+    }
+    .banner-container.container{
+        .banner_btns{
+            img{
+                display: none !important;
+            }
+        }
+    }
+    .main{
+        padding: 0;
+    }
+    .product-card {
+        &_hover-open{
+            max-height: 1000px;
+            &:first-child{
+                position: absolute;
+                right: 0;
+                padding: 10px;
+                margin: 5px 20px;
+                background-color: white;
+                border-radius: 100%;
+                img{
+                    margin: 0 !important;
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+            position: relative;
+            transform: scale(1);
+            z-index: 1003223;
+        }
+        &>span{
+            display: block;
+        }
+        &_buttons{
+            button{
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+    }
+    .callback_wrappper{
+        form{
+            &>div{
+                &:first-child{
+                    flex-direction: column;
+                }
+                &:last-child{
+                    input{
+                        &[type=checkbox]{
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            width: 30px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_cont{
+        flex-direction: column-reverse;
     }
 }
 

@@ -33,8 +33,8 @@ jQuery(document).ready(function($){
     })
     $('.multiple_slider').slick({
         infinite: false,
-        rows: 2,
-        slidesPerRow: 8,
+        rows: 4,
+        slidesPerRow: 4,
         variableWidth: false,
         touchThreshold: 10,
         centerMode: false,
@@ -42,7 +42,27 @@ jQuery(document).ready(function($){
         dots: true,
         arrows: true,
         prevArrow: $('.banner-button-prev2'),
-        nextArrow: $('.banner-button-next2')
+        nextArrow: $('.banner-button-next2'),
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings:{
+                    slidesPerRow: 3
+                }
+            },
+            {
+                breakpoint: 990,
+                settings:{
+                    slidesPerRow: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesPerRow: 2
+                }
+            }
+        ]
     })
 
     const states = {

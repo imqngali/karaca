@@ -34,6 +34,22 @@
                     </ul>
                 </div>
             </div>
+            <div class="header__main-links_mobile">
+                <div>
+                    <img id="logo" src="./img/Logo.svg" alt="Karaca Home">
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center">
+                        <img src="./img/blue_burger.svg" alt="" class="mr-rem1 inline-block">
+                        <span class=" text-main_color text-sm font-semibold">Войти</span>
+                    </div>
+                    <div class="header__main-links_mobile_burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
             <div class="header__funcs">
                 <img id="logo" src="./img/Logo.svg" alt="Karaca Home" >
                 <div class="search-form_wrap">
@@ -51,6 +67,19 @@
                     </div>
                 </div>
             </div>
+            <div class="header__funcs_mobile">
+                <div class="search-form_wrap">
+                    <form action="/action_page.php">
+                        <input type="search" placeholder="Я ищу">
+                        <img type="submit" src="./img/search.svg">
+                      </form>
+                </div>
+                <div class="btns">
+                    <img src="./img/shopping-cart.svg">
+                    
+                </div>
+            </div>
+            
             <div class="header__cats">
                 <ul class="cats">
                     <li><a href="#" style="color:#00BCD4">Главная</a></li>
@@ -152,7 +181,7 @@
                     <div >
                         <div class="banner flex">
                             <div class="bg-main_color flex items-center justify-center ">
-                                <div class="text-left w-2/3">
+                                <div class="fromTabletToPhone:text-center w-2/3">
                                     <h4 class="text-1.4rem font-semibold text-white">Все, что нужно для вашего уюта вы найдете у нас!</h4>
                                     <span class="text-rem1 block text-white my-1rem">Посуда, техника, акссесуары по специальной акции</span>
                                     <button class="bg-white py-0.7rem   px-3.4rem inline-block text-main_color rounded-full">Подробнее</button>
@@ -164,9 +193,16 @@
                         </div>
                     </div>
                     <div >
-                        <div>
-                            <div class="banner">
-                                <img src="./img/banner.png">
+                        <div class="banner flex">
+                            <div class="bg-main_color flex items-center justify-center ">
+                                <div class="fromTabletToPhone:text-center w-2/3">
+                                    <h4 class="text-1.4rem font-semibold text-white">Все, что нужно для вашего уюта вы найдете у нас!</h4>
+                                    <span class="text-rem1 block text-white my-1rem">Посуда, техника, акссесуары по специальной акции</span>
+                                    <button class="bg-white py-0.7rem   px-3.4rem inline-block text-main_color rounded-full">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="w/full">
+                                <img src="./img/banner_bg.svg" width="100%" alt="">
                             </div>
                         </div>
                     </div>
@@ -634,14 +670,16 @@
 
 
         <h1>Актуальные скидки</h1>
-        <div class="container">
+        <div class="discount_block">
+            <div class="container">
 
-            <div class="grad_banner">
-                <span>Скидки на посуду -50% 
-                    конца мая</span>
-                <img src="./img/image.svg">
+                <div class="grad_banner">
+                    <span>Скидки на посуду -50% 
+                        конца мая</span>
+                    <img src="./img/image.svg">
+                </div>
+                
             </div>
-            
         </div>
 
         <h1>Актуальные скидки</h1>
@@ -652,7 +690,7 @@
             <div class="callback_wrappper mt-5">
                 <form action="/action_page.php" method="get">
                     <div>
-                        <input type="text" placeholder="Ваш e-mail" required><br><br>
+                        <input type="text" placeholder="Ваш e-mail" required><br>
                         <button type="submit">Подписаться</button>
                     </div>
                     <div class="flex items-center relative mt-3.2rem">

@@ -24,7 +24,6 @@ html{
     font-size: 16px;
 }
 .header {
-    max-width: 1440px;
     margin: 0 auto;
     background: #f2f2f2;
 }
@@ -179,7 +178,6 @@ input:focus {
 
 .wrapper {
     padding: 15px 0;
-    max-width: 1440px;
     margin: 0 auto;
     // background: #f2f2f2;
 }
@@ -240,12 +238,10 @@ input:focus {
 
 .main {
     margin: 20px auto 100px auto;
-    max-width: 1440px;
     padding: 15px;
 }
 
 .banner-container {
-    max-width: 1440px;
     margin: 45px auto;
 }
 
@@ -516,7 +512,6 @@ img{
 .callback_wrappper {
 display: block;
 width: 100%;
-margin: 35px auto;
 
 form {
     display: table;
@@ -525,7 +520,7 @@ form {
 
 div {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -598,6 +593,45 @@ button {
 
 .product__main__info-rating {
     display: flex;
+text-align: center;
+font-size: 22px;
+font-weight: 500;
+margin-top: 120px;
+margin-bottom: 40px;
+}
+
+.main__checkbox{
+    margin-top: 40px;
+}
+
+.product__inner {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.product__info {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+margin-top: 110px;
+}
+
+.product__main__img {
+width: 40%;
+margin-right: 30px;
+}
+
+.product__main__info {
+display: flex;
+flex-direction: column;
+padding-top: 30px;
+width: 50%;
+}
+
+.product__main__info-rating {
+display: flex;
+margin-bottom: 30px;
 
     img {
         height: 25.375px;
@@ -608,27 +642,26 @@ button {
 .product__main__text {
 h1 {
     font-weight: 500;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 6px;
 }
 
 display: flex;
 flex-direction: column;
-
-span {
-    margin-bottom: 15px;
-}
 }
 
 .product__main__descr {
-font-weight: normal;
+font-weight: 400;
 font-size: 22px;
 line-height: 22px;
+margin-bottom: 10px;
 }
 
 .product__main__article {
-font-weight: normal;
+font-weight: 400;
 font-size: 18px;
 color: #5b5a6c;
+margin-bottom: 50px;
 }
 
 .product__main__price {
@@ -636,14 +669,14 @@ font-weight: 500;
 font-size: 36px;
 line-height: 44px;
 color: #030028;
-margin: 20px 0;
+margin-bottom: 30px;
 }
 
 .counter {
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 10px;
+padding: 10px 20px;
 border: 1px solid #dbdbdb;
 border-radius: 50px;
 width: 160px;
@@ -652,7 +685,10 @@ font-weight: bold;
 
 .product__main__btns {
 display: flex;
-justify-content: space-between;
+
+.product__main-btns-img{
+    margin: 0 20px;
+}
 
 button {
     background: #00bcd4;
@@ -667,7 +703,7 @@ button {
 }
 
 .refund {
-margin: 35px 0;
+margin: 40px 0 20px 0;
 display: flex;
 align-items: center;
 
@@ -787,10 +823,10 @@ width: 80%;
 }
 
 .tab_content {
-padding: 50px;
+padding: 20px 55px;
 width: 100%;
 background: white;
-margin: 0 auto;
+border-radius: 0px 0px 16px 16px;
 }
 
 .tab_title {
@@ -799,15 +835,19 @@ font-weight: 500;
 font-size: 20px;
 line-height: 24px;
 color: #000000;
+margin-bottom: 30px;
 }
 
 .tab_content ul {
 margin: 15px 0;
 padding: 0;
+list-style: disc;
 
 li {
-    margin: 15px;
+    margin: 15px 20px;
     padding: 0;
+    font-size: 18px;
+    font-weight: 400;
 }
 }
 
@@ -818,6 +858,8 @@ margin-top: 55px;
 .adv_row {
 margin: 15px 0;
 display: flex;
+font-size: 18px;
+font-weight: 400;
 align-items: center;
 
 img {
@@ -1134,6 +1176,78 @@ color: #ffffff;
         font-weight: 500;
         margin-top: 25px;
         margin-bottom: 15px;
+    }
+}
+
+.tabs a{
+    color: black !important;
+    text-decoration: none;
+}
+
+@media (max-width: 767px){ 
+    .product__main__img{
+        width: 100%;
+    }
+
+    .product__main__info{
+        width: 100%;
+    }
+
+    .product__main__btns{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .counter{
+        width: 70%;
+        margin-right: 10px;
+    }
+
+    .product__main__btns button{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .product__main__btns .product__main-btns-img{
+        margin: 0;
+    }
+
+    .product__info{
+        overflow: hidden;
+    }
+
+    .product__info .tabs{
+        overflow-x: scroll;
+    }
+
+    .tab_content{
+        padding: 30px;
+    }
+
+    .callback_wrappper div{
+        align-items: center;
+    }
+
+    .callback_wrappper button{
+        width: calc(100% - 30px)
+    }
+
+    .callback_wrappper input{
+        margin-right: 0;
+        width: calc(100% - 30px);
+    }
+
+    .callback_wrappper form>div:last-child input[type=checkbox]{
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .product__main__img{
+        width: 45%;
+        object-fit: cover;
+        -o-object-position: center;
     }
 }
 

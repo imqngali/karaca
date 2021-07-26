@@ -1,3 +1,393 @@
+.profile_inner{
+  background-color:white;
+  display:flex;
+  border-radius:16px;
+  overflow:hidden;
+  padding:0
+}
+
+.profile_inner.container{
+  padding:0
+}
+
+.profile_content{
+  color:black;
+  width:65%;
+  padding:24px 40px
+}
+
+.profile_content_header{
+  display:flex;
+  align-items:center
+}
+
+.profile_content_header_info{
+  color:black;
+  margin-left:16px
+}
+
+.profile_content_header_info>h3{
+  font-size:20px;
+  font-weight:700
+}
+
+.profile_content_detail>div{
+  margin-top:20px
+}
+
+.profile_content_detail>div h3{
+  font-size:18px;
+  font-weight:600
+}
+
+.profile_content_detail_adress_list{
+  margin-top:20px
+}
+
+.profile_content_detail_adress_list_inner{
+  padding:15px;
+  border:1px solid lightgray;
+  border-radius:10px
+}
+
+.profile_content_detail_adress_list>div:last-child{
+  text-align:right
+}
+
+.profile_content_detail_adress_list>div:last-child button{
+  border:none;
+  font-weight:500;
+  margin-top:10px
+}
+
+.profile_menu{
+  width:35%;
+  background-color:#00bcd4
+}
+
+.profile_menu_header{
+  padding:24px;
+  display:flex;
+  align-items:center
+}
+
+.profile_menu_header_info{
+  color:white;
+  margin-left:16px
+}
+
+.profile_menu_header_info>h3{
+  font-size:20px;
+  font-weight:700
+}
+
+.profile_menu_nav>a{
+  text-decoration:none !important;
+  display:block;
+  width:90%;
+  padding-left:53px;
+  padding-top:14px;
+  padding-bottom:14px;
+  display:flex;
+  transition:0.3s all;
+  border-radius:5px
+}
+
+.profile_menu_nav>a>span{
+  font-weight:500;
+  color:white;
+  margin-left:25px;
+  display:inline-block
+}
+
+.profile_menu_nav>a svg path{
+  fill:white
+}
+
+.profile_menu_nav>a:hover{
+  background-color:white
+}
+
+.profile_menu_nav>a:hover svg path{
+  fill:black !important
+}
+
+.profile_menu_nav>a:hover span{
+  color:black
+}
+
+.profile_menu_nav>a.active{
+  background-color:white
+}
+
+.profile_menu_nav>a.active span{
+  color:black
+}
+
+.profile_menu_nav>a.active svg path{
+  fill:black !important
+}
+
+.profile span{
+  display:inline-block
+}
+
+.profile_content{
+  padding:40px 80px
+}
+
+.profile_content_list{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap
+}
+
+.profile_content_list_container{
+  width:250px;
+  background-color:#F9F9F9;
+  box-shadow:0px 2px 16px rgba(0,0,0,0.12);
+  margin:15px;
+  padding:0 20px
+}
+
+.profile_content_list_container_info{
+  text-align:center
+}
+
+.profile_content_list_container_info>h3{
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:0
+}
+
+.profile_content_list_container_info>span{
+  margin:6px 0;
+  font-size:14px;
+  color:#727187
+}
+
+.profile_content_list_container_info>button{
+  margin:15px 0;
+  font-size:14px;
+  font-weight:600;
+  color:white;
+  background-color:#00bcd4;
+  padding:11px 21px;
+  border-radius:20px
+}
+
+.profile_content_list_container .love{
+  text-align:right;
+  margin:14px 10px
+}
+
+.profile_content_list_container .stars{
+  margin:12px 0;
+  text-align:center
+}
+
+.profile_content_list_container .imgContainer img{
+  height:220px;
+  -o-object-fit:cover;
+  object-fit:cover
+}
+
+.profile_content_forgot h2{
+  font-size:30px
+}
+
+.profile_content_forgot>form{
+  width:65%
+}
+
+.profile_content_forgot>form>div{
+  margin-top:40px
+}
+
+.profile_content_forgot>form>div>p{
+  font-weight:500;
+  font-size:14px
+}
+
+.profile_content_forgot>form>div>div{
+  border:1px solid #C4C4C4;
+  display:flex;
+  padding:10px 16px;
+  border-radius:24px;
+  align-items:center
+}
+
+.profile_content_forgot>form>div>div>input{
+  width:100%
+}
+
+.profile_content_forgot>form>div>div>img{
+  margin-left:auto
+}
+
+.profile_content_forgot>form>div button{
+  width:100%;
+  border-radius:24px;
+  background-color:#00bcd4;
+  text-align:center;
+  padding:13px 0;
+  color:white;
+  font-weight:600
+}
+
+.profile_content_forgot>form .hint{
+  margin-top:20px
+}
+
+.profile_content_forgot>form .hint ul{
+  margin-left:15px
+}
+
+.profile_content_forgot>form .hint ul li{
+  list-style-type:disc;
+  font-size:14px;
+  font-weight:500
+}
+
+.contacts{
+  display:flex;
+  align-items:center;
+  padding:0 0 56px 0
+}
+
+.contacts .left{
+  width:55%
+}
+
+.contacts .left .cities{
+  display:flex
+}
+
+.contacts .left .cities>div>h2{
+  font-size:28px;
+  color:#00BCD4
+}
+
+.contacts .left .cities>div>div{
+  margin:15px 0
+}
+
+.contacts .left .cities>div>div>div{
+  margin-top:5px
+}
+
+.contacts .left .cities>div>div>div span{
+  font-weight:600
+}
+
+.contacts .right{
+  width:45%;
+  padding:56px 33px;
+  border-radius:24px;
+  box-shadow:0px 4px 12px rgba(0,0,0,0.12);
+  background-color:white
+}
+
+.contacts .right h1{
+  font-size:36px
+}
+
+.contacts .right form>div{
+  margin-top:32px
+}
+
+.contacts .right form>div>p{
+  font-weight:500;
+  font-size:16px
+}
+
+.contacts .right form>div>input{
+  padding:8px 16px;
+  border-radius:24px;
+  border:1px solid rgba(196,196,196,0.6);
+  width:100%;
+  outline:none
+}
+
+.contacts .right form>div textarea{
+  border-radius:10px;
+  border:1px solid rgba(196,196,196,0.6);
+  width:100%;
+  padding:10px;
+  outline:none;
+  resize:none
+}
+
+.vacancies_banner{
+  padding:60px 94px;
+  color:white;
+  border-radius:16px;
+  text-align:center
+}
+
+.vacancies_banner span{
+  font-size:20px;
+  font-weight:600
+}
+
+.vacancies_form{
+  margin:100px 0;
+  background-color:white;
+  box-shadow:0px 4px 12px rgba(0,0,0,0.12);
+  border-radius:24px;
+  padding:52px 96px
+}
+
+.vacancies_form_detail{
+  display:flex;
+  align-items:center
+}
+
+.vacancies_form_detail>div:first-child{
+  width:55%;
+  text-align:center
+}
+
+.vacancies_form_detail>div:first-child p{
+  text-align:justify;
+  margin-top:56px
+}
+
+.vacancies_form_detail>div:last-child{
+  width:45%;
+  margin-left:32px
+}
+
+.vacancies_form_detail>div:last-child form>div{
+  margin-top:32px
+}
+
+.vacancies_form_detail>div:last-child form>div>p{
+  font-weight:500;
+  font-size:16px
+}
+
+.vacancies_form_detail>div:last-child form>div>input{
+  padding:8px 16px;
+  border-radius:24px;
+  border:1px solid rgba(196,196,196,0.6);
+  width:100%;
+  outline:none
+}
+
+.vacancies_form_detail>div:last-child form>div textarea{
+  border-radius:10px;
+  border:1px solid rgba(196,196,196,0.6);
+  width:100%;
+  padding:10px;
+  outline:none;
+  resize:none
+}
+
+.vacancies_form_detail>div:last-child textarea{
+  height:154px
+}
+
 *{
   box-sizing:border-box;
   font-family:Montserrat
@@ -450,8 +840,6 @@ img{
 
 .product-card:hover{
   box-shadow:0px 2px 16px rgba(0,0,0,0.12);
-  position:absolute;
-  transform:scale(1);
   z-index:1003223
 }
 
@@ -1049,7 +1437,7 @@ footer{
   }
 
   .multiple_slider .slick-slide>div>div{
-    width:42% !important
+    width:45% !important
   }
 
   .grad_banner{
@@ -1080,6 +1468,10 @@ footer{
 
   .main{
     padding:0
+  }
+
+  .inner_card{
+    margin:5px
   }
 
   .product-card_hover-open{
@@ -1128,5 +1520,14 @@ footer{
 
   .footer_cont{
     flex-direction:column-reverse
+  }
+
+  .main h1{
+    text-align:center;
+    font-size:24px;
+    font-weight:600 !important;
+    font-weight:500;
+    margin-top:25px;
+    margin-bottom:15px
   }
 }

@@ -1,0 +1,65 @@
+@mixin formStyle {
+    form{
+        &>div{
+            margin-top: 32px;
+            &>p{
+                font-weight: 500;
+                font-size: 16px;
+            }
+            &>input{
+                padding: 8px 16px;
+                border-radius: 24px;
+                border: 1px solid rgba(196, 196, 196, 0.6);
+                width: 100%;
+                outline: none;
+            }
+            textarea{
+                border-radius: 10px;
+                border: 1px solid rgba(196, 196, 196, 0.6);
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                resize: none;
+            }
+        }
+    }
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    padding: 0 0 56px 0 ;
+    .left{
+        width: 55%;
+        .cities{
+            display: flex;
+            &>div{
+                &>h2{
+                    font-size: 28px;
+                    color: #00BCD4;
+                }
+                &>div{
+                    margin: 15px 0;
+                    
+                    &>div{
+                        margin-top: 5px;
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right{
+        width: 45%;
+        // height: 70vh;
+        padding: 56px 33px;
+        border-radius: 24px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+        background-color: white;
+        h1{
+            font-size: 36px;
+        }
+        @include formStyle();
+    }
+}

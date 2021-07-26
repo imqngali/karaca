@@ -1,3 +1,8 @@
+@import 'profile';
+@import 'favorite';
+@import 'forgot';
+@import 'contacts';
+@import 'vacancies';
 * {
     box-sizing: border-box;
     font-family: Montserrat;
@@ -432,8 +437,8 @@ img{
     
     &:hover{
         box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
-        position: absolute;
-        transform: scale(1);
+        // position: absolute;
+        // transform: scale(1);
         z-index: 1003223;
     }
     &_hover-open{
@@ -556,48 +561,48 @@ button {
 }
 
 .main h1 {
-text-align: center;
-font-size: 21px;
-font-weight: 500;
-margin-top: 80px;
-margin-bottom: 56px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 56px;
 }
 
 .product__main {
-width: 80%;
-margin: 0 auto;
-display: flex;
-flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product__info {
-width: 80%;
-margin: 0 auto;
-display: flex;
-flex-wrap: wrap;
-margin-top: 55px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
 }
 
 .product__main__img {
-width: 448px;
-height: 448px;
-max-width: 40%;
-margin-right: 15px;
+    width: 448px;
+    height: 448px;
+    max-width: 40%;
+    margin-right: 15px;
 }
 
 .product__main__info {
-display: flex;
-flex-direction: column;
-padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .product__main__info-rating {
-display: flex;
+    display: flex;
 
-img {
-    height: 25.375px;
-    width: 26.25px;
-}
+    img {
+        height: 25.375px;
+        width: 26.25px;
+    }
 }
 
 .product__main__text {
@@ -1031,7 +1036,7 @@ color: #ffffff;
         &>div{
             text-align: center;
             &>div{
-                width: 42% !important;
+                width: 45% !important;
             }
         }
     }
@@ -1061,6 +1066,12 @@ color: #ffffff;
     .main{
         padding: 0;
     }
+    .inner_card{
+        // min-width: 220px;
+        // width: 22%;
+        margin: 5px;
+    }
+    
     .product-card {
         &_hover-open{
             max-height: 1000px;
@@ -1115,6 +1126,14 @@ color: #ffffff;
     }
     .footer_cont{
         flex-direction: column-reverse;
+    }
+    .main h1 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600 !important;
+        font-weight: 500;
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 }
 

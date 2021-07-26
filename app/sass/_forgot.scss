@@ -1,0 +1,52 @@
+.profile{
+    &_content{
+        &_forgot{
+            h2{
+                font-size: 30px;
+            }
+            &>form{
+                width: 65%;
+                &>div{
+                    margin-top: 40px;
+                    &>p{
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                    &>div{
+                        border: 1px solid #C4C4C4;
+                        display: flex;
+                        padding: 10px 16px;
+                        border-radius: 24px;
+                        align-items: center;
+                        &>input{
+                            width: 100%;
+                        }
+                        &>img{
+                            margin-left: auto;
+                        }
+                    }
+                    button{
+                        width: 100%;
+                        border-radius: 24px;
+                        background-color: $main_color;
+                        text-align: center;
+                        padding: 13px 0;
+                        color: white;
+                        font-weight: 600;
+                    }
+                }
+                .hint{
+                    margin-top: 20px;
+                    ul{
+                        margin-left: 15px;
+                        li{
+                            list-style-type: disc;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

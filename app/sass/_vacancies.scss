@@ -1,0 +1,41 @@
+.vacancies{
+    &_banner{
+        padding: 60px 94px;
+        color: white;
+        border-radius: 16px;
+        text-align: center;
+        span{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    &_form{
+        margin: 100px 0;
+        background-color: white;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+        border-radius: 24px;
+        padding: 52px 96px;
+        &_detail{
+            display: flex;
+            align-items: center;
+            &>div{
+                &:first-child{
+                    width: 55%;
+                    text-align: center;
+                    p{
+                        text-align: justify;
+                        margin-top: 56px;
+                    }
+                }
+                &:last-child{
+                    width: 45%;
+                    @include formStyle;
+                    margin-left: 32px;
+                    textarea{
+                        height: 154px;
+                    }
+                }
+            }
+        }
+    }
+}

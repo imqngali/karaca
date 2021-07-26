@@ -1,0 +1,56 @@
+.profile{
+    span{
+        display: inline-block;
+    }
+    &_content{
+        padding: 40px 80px;
+        &_list{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            &_container{
+                width: 250px;
+                background-color: #F9F9F9 ;
+                box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+                margin: 15px;
+                padding: 0 20px;
+                &_info{
+                    text-align: center;
+                    &>h3{
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                    }
+                    &>span{
+                        margin: 6px 0;
+                        font-size: 14px;
+                        color: #727187;
+                    }
+                    &>button{
+                        margin: 15px 0;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: white;
+                        background-color: $main_color;
+                        padding: 11px 21px;
+                        border-radius: 20px;
+                    }
+                }
+                .love{
+                    text-align: right;
+                    margin: 14px 10px;
+                }
+                .stars{
+                    margin: 12px 0;
+                    text-align: center;
+                }
+                .imgContainer{
+                    img{
+                        height: 220px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

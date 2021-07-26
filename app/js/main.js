@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
     })
     $('.multiple_slider').slick({
         infinite: false,
-        rows: 4,
+        rows: 3,
         slidesPerRow: 4,
         variableWidth: false,
         touchThreshold: 10,
@@ -117,4 +117,5 @@ jQuery(document).ready(function($){
             states.currentTab = x;
         })
     }
+    $('textarea').val("");  
 })

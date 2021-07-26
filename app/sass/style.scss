@@ -781,7 +781,7 @@ width: 80%;
 }
 
 .tab_content {
-padding: 60px 55px;
+padding: 20px 55px;
 width: 100%;
 background: white;
 border-radius: 0px 0px 16px 16px;
@@ -1120,6 +1120,78 @@ color: #ffffff;
     }
     .footer_cont{
         flex-direction: column-reverse;
+    }
+}
+
+.tabs a{
+    color: black !important;
+    text-decoration: none;
+}
+
+@media (max-width: 767px){ 
+    .product__main__img{
+        width: 100%;
+    }
+
+    .product__main__info{
+        width: 100%;
+    }
+
+    .product__main__btns{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .counter{
+        width: 70%;
+        margin-right: 10px;
+    }
+
+    .product__main__btns button{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .product__main__btns .product__main-btns-img{
+        margin: 0;
+    }
+
+    .product__info{
+        overflow: hidden;
+    }
+
+    .product__info .tabs{
+        overflow-x: scroll;
+    }
+
+    .tab_content{
+        padding: 30px;
+    }
+
+    .callback_wrappper div{
+        align-items: center;
+    }
+
+    .callback_wrappper button{
+        width: calc(100% - 30px)
+    }
+
+    .callback_wrappper input{
+        margin-right: 0;
+        width: calc(100% - 30px);
+    }
+
+    .callback_wrappper form>div:last-child input[type=checkbox]{
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .product__main__img{
+        width: 45%;
+        object-fit: cover;
+        -o-object-position: center;
     }
 }
 

@@ -713,6 +713,11 @@ input:focus{
   grid-template-columns:repeat(auto-fill, minmax(260px, 1fr))
 }
 
+.shop-grid .product-card{
+  width:236px;
+  margin:5px
+}
+
 .catalog{
   width:100%;
   margin:0px auto
@@ -756,7 +761,7 @@ input:focus{
 }
 
 .callback{
-  margin:155px
+  margin:30px
 }
 
 img{
@@ -962,9 +967,44 @@ img{
 
 .main h1{
   text-align:center;
+  font-size:21px;
+  font-weight:500;
+  margin-top:80px;
+  margin-bottom:56px
+}
+
+.product__main{
+  width:80%;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap
+}
+
+.product__info{
+  width:80%;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:55px
+}
+
+.product__main__img{
+  width:448px;
+  height:448px;
+  margin-right:15px
+}
+
+.product__main__info{
+  display:flex;
+  flex-direction:column;
+  padding:10px
+}
+
+.product__main__info-rating{
+  display:flex;
+  text-align:center;
   font-size:22px;
   font-weight:500;
-  margin-top:120px;
   margin-bottom:40px
 }
 
@@ -1118,7 +1158,7 @@ img{
 .small_banners{
   display:flex;
   width:100%;
-  margin:35px auto;
+  margin:0px auto;
   justify-content:space-between;
   flex-wrap:wrap
 }
@@ -1192,7 +1232,7 @@ img{
 
 .filter_grid{
   display:flex;
-  width:80%
+  width:100%
 }
 
 .tab_content{
@@ -1312,10 +1352,15 @@ footer{
   list-style-type:none
 }
 
+.shop__filter__ul li{
+  font-size:14px
+}
+
 .shop__filter__ul li,.shop__filter__ul h4{
-  padding:5px;
-  background:#fafafa;
-  width:80%;
+  padding:5px 15px;
+  background:white;
+  border-radius:4px;
+  width:95%;
   display:flex;
   justify-content:space-between;
   align-items:center;

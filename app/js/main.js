@@ -89,7 +89,7 @@ jQuery(document).ready(function($){
     
     for (let index = 0; index < states.clickCategories.length; index++) {
         const element = states.clickCategories[index];
-        states.clickHash.push(false)
+        states.clickHash.push(true)
         $(element).click(function(e){
             const rotateEl = (target) => {
                 target.removeClass(`${states.clickHash[index] ? '' : '-'}rotate-90`)

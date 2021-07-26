@@ -314,6 +314,10 @@ input:focus {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    .product-card{
+        width: 236px;
+        margin: 5px;
+    }
 }
 
 .catalog {
@@ -357,7 +361,7 @@ input:focus {
 }
 
 .callback {
-margin: 155px;
+    margin: 30px;
 }
 img{
     display: inline-block !important;
@@ -581,7 +585,7 @@ button {
 .product__main__img {
     width: 448px;
     height: 448px;
-    max-width: 40%;
+    // max-width: 40%;
     margin-right: 15px;
 }
 
@@ -596,7 +600,7 @@ button {
 text-align: center;
 font-size: 22px;
 font-weight: 500;
-margin-top: 120px;
+// margin-top: 120px;
 margin-bottom: 40px;
 }
 
@@ -745,7 +749,7 @@ margin: 0;
 .small_banners {
     display: flex;
     width: 100%;
-    margin: 35px auto;
+    margin: 0px auto;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -818,37 +822,37 @@ margin: 0;
 }
 
 .filter_grid {
-display: flex;
-width: 80%;
+    display: flex;
+    width: 100%;
 }
 
 .tab_content {
-padding: 20px 55px;
-width: 100%;
-background: white;
-border-radius: 0px 0px 16px 16px;
+    padding: 20px 55px;
+    width: 100%;
+    background: white;
+    border-radius: 0px 0px 16px 16px;
 }
 
 .tab_title {
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-color: #000000;
-margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 30px;
 }
 
 .tab_content ul {
-margin: 15px 0;
-padding: 0;
-list-style: disc;
-
-li {
-    margin: 15px 20px;
+    margin: 15px 0;
     padding: 0;
-    font-size: 18px;
-    font-weight: 400;
-}
+    list-style: disc;
+
+    li {
+        margin: 15px 20px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
 }
 
 .adv_wrapper {
@@ -945,11 +949,14 @@ color: #ffffff;
 
 .shop__filter__ul {
     list-style-type: none;
-
+    li{
+        font-size: 14px;
+    }
     li, h4 {
-        padding: 5px;
-        background: #fafafa;
-        width: 80%;
+        padding: 5px 15px;
+        background: white;
+        border-radius: 4px;
+        width: 95%;
         display: flex;
         justify-content: space-between;
         align-items: center;

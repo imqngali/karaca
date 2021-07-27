@@ -3,6 +3,8 @@
 @import 'forgot';
 @import 'contacts';
 @import 'vacancies';
+@import 'payment';
+
 * {
     box-sizing: border-box;
     font-family: Montserrat;
@@ -826,6 +828,12 @@ margin: 0;
     width: 100%;
 }
 
+@media (max-width: 767px){
+    .filter__grid{
+        flex-wrap: wrap;
+    }
+}
+
 .tab_content {
     padding: 20px 55px;
     width: 100%;
@@ -1247,6 +1255,18 @@ color: #ffffff;
     .callback_wrappper form>div:last-child input[type=checkbox]{
         margin-left: 15px;
         margin-right: 10px;
+    }
+
+    .filter__inner{
+        flex-wrap: wrap;
+    }
+
+    .filter__top{
+        width: 100%;
+    }
+
+    .filter__items{
+        width: 100%;
     }
 }
 

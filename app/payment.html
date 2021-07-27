@@ -196,7 +196,7 @@
                         <button class="payment__button">Продолжить</button>
                     </div>
                 </div>
-                <div class="payment__tab2" style="display: block;">
+                <div class="payment__tab2" style="display: none;">
                     <div class="product__info">
                             <div class="tabs">
                                 <a href="#Описание" class="active">Адрес доставкие</a>
@@ -251,12 +251,47 @@
                                 </form>
                             </div>
                             <div class="tab_content" style="display: none">
-                                
+                                <form action="" class="payment__form">
+                                    <div class="payment__form-inner payment__form-inner2">
+                                        <span>Выбрать пункт выдачи</span>
+                                        <select name="" id="" class="payment__select"></select>
+                                        <div class="payment__form-subtitle">*Доставка до пункта выдачи дешевле на <img src="img/payment_delivery.svg" alt=""> 1500 тг</div>
+                                        <button class="payment__form-button">Продолжить</button>
+                                    </div>
+                                </form>
                             </div>
                             <div class="tab_content" style="display: none">
-                                
+                                <div class="payment__form-inner3">
+                                    <span>Выбрать филиал</span>
+                                    <div class="payment__wrapp">
+                                        <input type="checkbox" class="checkbox">
+                                        г. Алматы Сатбаева  232 а
+                                    </div>
+                                    <div class="payment__wrapp">
+                                        <input type="checkbox" class="checkbox">
+                                        г. Астана Абая 45
+                                    </div>
+                                    <button class="payment__form-button">Продолжить</button>
+                                </div>
                             </div>
-                    </section>
+                    </div>
+                </div>
+                <div class="payment__tab3">
+                    <div class="payment__form-inner3">
+                        <span>Выберите способ оплаты</span>
+                        <div class="payment__wrapp">
+                            <input type="checkbox" class="checkbox">
+                            Оплатить картой
+                        </div>
+                        <div class="payment__wrapp">
+                            <input type="checkbox" class="checkbox">
+                            Выставить счет на оплату в приложении Kaspi
+                        </div>
+                        <div class="payment__wrapp">
+                            <input type="checkbox" class="checkbox">
+                            Оплатить наличными
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

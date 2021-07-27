@@ -16,40 +16,6 @@
     <title>Main</title>
 </head>
 <body>
-    <div class="modal_auth">
-        <div class="modal_auth_inner">
-            <div class="modal_auth_inner_tab">
-                <div class="current">
-                    <span>Вход</span>
-                </div>
-                <div>
-                    <span>Регистрация</span>
-                </div>
-            </div>
-            <div class="modal_auth_inner_content">
-                <div class="google_block">
-                    <img src="./img/google.svg" alt="">
-                    <span>Google </span>
-                </div>
-                <form action="post">
-                    <div>
-                        <p>Ваша почта</p>
-                        <input type="email" placeholder="info@alux.kz">
-                    </div>
-                    <div >
-                        <p>Пароль</p>
-                        <input type="text" placeholder="Ваш текущий пароль">
-                    </div>
-                    <p>Забыли пароль?</p>
-                    <button>Войти</button>
-                </form>
-                <p>
-                    Входя в Личный кабинет, вы принимаете <br>
-Условия использования сайта
-                </p>
-            </div>
-        </div>
-    </div>
     <nav class="header">
         <div class="header__container container">
             <div class="header__main-links">
@@ -142,11 +108,15 @@
                         </div>
                     </div>
                     <div class="profile_menu_nav">
-                        <a href="" class="active">
-                            <img src="./img/profile_icon.svg" alt="">
+                        <a href="">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.00033 9.33334C8.07735 9.33334 7.17509 9.05964 6.40766 8.54686C5.64023 8.03408 5.0421 7.30525 4.68889 6.45253C4.33568 5.5998 4.24326 4.66149 4.42333 3.75625C4.60339 2.851 5.04785 2.01948 5.70049 1.36684C6.35314 0.714192 7.18466 0.269735 8.0899 0.0896708C8.99515 -0.0903936 9.93346 0.00202199 10.7862 0.355231C11.6389 0.70844 12.3677 1.30658 12.8805 2.07401C13.3933 2.84144 13.667 3.74369 13.667 4.66667C13.667 5.90435 13.1753 7.09133 12.3002 7.9665C11.425 8.84167 10.238 9.33334 9.00033 9.33334ZM9.00033 1.33334C8.34105 1.33334 7.69659 1.52883 7.14842 1.8951C6.60026 2.26137 6.17302 2.78197 5.92073 3.39106C5.66843 4.00014 5.60242 4.67037 5.73104 5.31697C5.85966 5.96357 6.17713 6.55752 6.6433 7.02369C7.10948 7.48987 7.70342 7.80734 8.35002 7.93595C8.99663 8.06457 9.66685 7.99856 10.2759 7.74627C10.885 7.49398 11.4056 7.06673 11.7719 6.51857C12.1382 5.97041 12.3337 5.32594 12.3337 4.66667C12.3337 3.78261 11.9825 2.93477 11.3573 2.30965C10.7322 1.68452 9.88438 1.33334 9.00033 1.33334Z" fill="black"/>
+                                <path d="M0.686991 14.2465C1.75612 13.1165 3.04447 12.2165 4.4733 11.6013C5.90212 10.9862 7.44138 10.6689 8.99699 10.6689C10.5526 10.6689 12.0919 10.9862 13.5207 11.6013C14.9495 12.2165 16.2379 13.1165 17.307 14.2465C17.5388 14.4941 17.6675 14.8207 17.667 15.1599V18.6665C17.667 19.0202 17.5265 19.3593 17.2765 19.6093C17.0264 19.8594 16.6873 19.9999 16.3337 19.9999H1.66699C1.31337 19.9999 0.97423 19.8594 0.724182 19.6093C0.474133 19.3593 0.333656 19.0202 0.333656 18.6665V15.1599C0.331322 14.8216 0.457626 14.4951 0.686991 14.2465ZM1.66699 18.6665H16.3337V15.1532C15.3888 14.1583 14.2515 13.3661 12.9908 12.8247C11.73 12.2834 10.3724 12.0042 9.00032 12.0042C7.62829 12.0042 6.27061 12.2834 5.0099 12.8247C3.74918 13.3661 2.61181 14.1583 1.66699 15.1532V18.6665Z" fill="black"/>
+                            </svg>
+                                
                             <span>Мой профиль</span>
                         </a>
-                        <a href="">
+                        <a href="" class="active">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.5654 6.39844H11.438C11.3349 6.39844 11.2505 6.48282 11.2505 6.58594V13.0383C11.2505 13.0992 11.2786 13.1555 11.3279 13.1906L15.2021 16.0195C15.2865 16.0805 15.4036 16.0641 15.4646 15.9797L16.1349 15.0656C16.1982 14.9789 16.1794 14.8617 16.0951 14.8031L12.7529 12.3867V6.58594C12.7529 6.48282 12.6685 6.39844 12.5654 6.39844ZM17.7169 8.16094L21.3919 9.0586C21.5091 9.08672 21.624 8.99766 21.624 8.87813L21.6427 5.09297C21.6427 4.93594 21.4622 4.84688 21.3404 4.94532L17.6466 7.83047C17.6187 7.85207 17.5974 7.8811 17.5853 7.91424C17.5731 7.94738 17.5706 7.98327 17.5779 8.0178C17.5853 8.05232 17.6022 8.08407 17.6268 8.10939C17.6514 8.13471 17.6826 8.15258 17.7169 8.16094ZM21.6474 15.218L20.3185 14.7609C20.2722 14.7451 20.2214 14.7479 20.1772 14.769C20.133 14.79 20.0987 14.8275 20.0818 14.8734C20.0372 14.993 19.9904 15.1102 19.9411 15.2273C19.524 16.2141 18.9263 17.1023 18.1622 17.8641C17.4067 18.622 16.5112 19.2261 15.5255 19.643C14.5044 20.0747 13.4068 20.2963 12.2982 20.2945C11.1779 20.2945 10.0927 20.0766 9.07083 19.643C8.08514 19.2261 7.18969 18.622 6.43411 17.8641C5.6724 17.1023 5.07474 16.2141 4.65521 15.2273C4.22587 14.2057 4.00591 13.1082 4.00833 12C4.00833 10.8797 4.2263 9.79219 4.6599 8.77032C5.07708 7.7836 5.67474 6.89532 6.4388 6.1336C7.19438 5.37567 8.08983 4.77154 9.07552 4.35469C10.0927 3.9211 11.1802 3.70313 12.3005 3.70313C13.4208 3.70313 14.506 3.9211 15.5279 4.35469C16.5136 4.77154 17.409 5.37567 18.1646 6.1336C18.4036 6.375 18.6286 6.62578 18.8349 6.89063L20.2365 5.79375C18.3919 3.43594 15.5208 1.91953 12.2958 1.92188C6.68021 1.92422 2.17083 6.48516 2.22708 12.1031C2.28333 17.6227 6.77161 22.0781 12.3005 22.0781C16.6482 22.0781 20.3513 19.3219 21.7622 15.4617C21.7974 15.3633 21.7458 15.2531 21.6474 15.218Z" fill="white"/>
                             </svg>
@@ -178,44 +148,156 @@
                     </div>
                 </div>
                 <div class="profile_content">
-                    <div class="profile_content_header">
-                        <div>
-                            <img src="./img/profile_image.svg" alt="">
-                        </div>
-                        <div class="profile_content_header_info">
-                            <h3>Галия Турсынбай</h3>
-                            <span>@galiya_tursunbai</span>
-                        </div>
-                    </div>
-                    <div class="profile_content_detail">
-                        <div class="profile_content_detail_number">
-                            <h3>Номер телефона:</h3>
-                            <span>+7 707 171 82 67</span>
-                        </div>
-                        <div class="profile_content_detail_adress">
-                            <h3>Адрес доставки::</h3>
-                            <div class="profile_content_detail_adress_list">
-                                <div class="profile_content_detail_adress_list_inner">
-                                    <p>Казахстан</p>
-                                    <p>050046</p>
-                                    <p>Алматы</p>
-                                    <p>Бостандыкский р-н</p>
-                                    <p>ул. Шевченко, 165 б, кв. 22, под. 1, дмф. 22, эт. 8</p>
+                    <div class="profile_content_list">
+                        <div class="profile_content_list_history">
+                            <div class="profile_content_list_history_header">
+                                <div>
+                                    <span>Номер заказа:</span>
+                                    <span>125667895</span>
                                 </div>
                                 <div>
-                                    <button>Редактировать</button>
+                                    <span>Сумма заказа:</span>
+                                    <span>125667895</span>
+                                </div>
+                                <div>
+                                    <span>Сумма заказа:</span>
+                                    <span>125667895</span>
+                                </div>
+                                <div>
+                                    <span>Сумма заказа:</span>
+                                    <span class="end">Заверщено</span>
                                 </div>
                             </div>
-                            <div class="profile_content_detail_adress_list">
-                                <div class="profile_content_detail_adress_list_inner">
-                                    <p>Казахстан</p>
-                                    <p>050046</p>
-                                    <p>Алматы</p>
-                                    <p>Бостандыкский р-н</p>
-                                    <p>ул. Шевченко, 165 б, кв. 22, под. 1, дмф. 22, эт. 8</p>
+                            <div class="profile_content_list_history_products">
+                                <div>
+                                    <div class="card_photo">
+                                        <img src="./img/card-photo.png" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h2>Karaca Silver Stone Granit</h2>
+                                        <span>Вок-сковорода для индукционной плиты
+                                            28 см</span>
+                                    </div>
+                                    <div class="increment">
+                                        <img src="./img/minus2.svg" alt="">
+                                        <span>1</span>
+                                        <img src="./img/plus2.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <span>11 990 тг</span>
+                                    </div>
                                 </div>
                                 <div>
-                                    <button>Редактировать</button>
+                                    <div class="card_photo">
+                                        <img src="./img/card-photo.png" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h2>Karaca Silver Stone Granit</h2>
+                                        <span>Вок-сковорода для индукционной плиты
+                                            28 см</span>
+                                    </div>
+                                    <div class="increment">
+                                        <img src="./img/minus2.svg" alt="">
+                                        <span>1</span>
+                                        <img src="./img/plus2.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <span>11 990 тг</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card_photo">
+                                        <img src="./img/card-photo.png" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h2>Karaca Silver Stone Granit</h2>
+                                        <span>Вок-сковорода для индукционной плиты
+                                            28 см</span>
+                                    </div>
+                                    <div class="increment">
+                                        <img src="./img/minus2.svg" alt="">
+                                        <span>1</span>
+                                        <img src="./img/plus2.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <span>11 990 тг</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile_content_list_history">
+                            <div class="profile_content_list_history_header">
+                                <div>
+                                    <span>Номер заказа:</span>
+                                    <span>125667895</span>
+                                </div>
+                                <div>
+                                    <span>Сумма заказа:</span>
+                                    <span>125667895</span>
+                                </div>
+                                <div>
+                                    <span>Сумма заказа:</span>
+                                    <span>125667895</span>
+                                </div>
+                                <div>
+                                    <span>Сумма заказа:</span>
+                                    <span class="end">Заверщено</span>
+                                </div>
+                            </div>
+                            <div class="profile_content_list_history_products">
+                                <div>
+                                    <div class="card_photo">
+                                        <img src="./img/card-photo.png" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h2>Karaca Silver Stone Granit</h2>
+                                        <span>Вок-сковорода для индукционной плиты
+                                            28 см</span>
+                                    </div>
+                                    <div class="increment">
+                                        <img src="./img/minus2.svg" alt="">
+                                        <span>1</span>
+                                        <img src="./img/plus2.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <span>11 990 тг</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card_photo">
+                                        <img src="./img/card-photo.png" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h2>Karaca Silver Stone Granit</h2>
+                                        <span>Вок-сковорода для индукционной плиты
+                                            28 см</span>
+                                    </div>
+                                    <div class="increment">
+                                        <img src="./img/minus2.svg" alt="">
+                                        <span>1</span>
+                                        <img src="./img/plus2.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <span>11 990 тг</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card_photo">
+                                        <img src="./img/card-photo.png" alt="">
+                                    </div>
+                                    <div class="">
+                                        <h2>Karaca Silver Stone Granit</h2>
+                                        <span>Вок-сковорода для индукционной плиты
+                                            28 см</span>
+                                    </div>
+                                    <div class="increment">
+                                        <img src="./img/minus2.svg" alt="">
+                                        <span>1</span>
+                                        <img src="./img/plus2.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <span>11 990 тг</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +306,40 @@
             </div>
         </div>
     </main>
-
+    <div class="modal_auth">
+        <div class="modal_auth_inner">
+            <div class="modal_auth_inner_tab">
+                <div class="current">
+                    <span>Вход</span>
+                </div>
+                <div>
+                    <span>Регистрация</span>
+                </div>
+            </div>
+            <div class="modal_auth_inner_content">
+                <div class="google_block">
+                    <img src="./img/google.svg" alt="">
+                    <span>Google </span>
+                </div>
+                <form action="post">
+                    <div>
+                        <p>Ваша почта</p>
+                        <input type="email" placeholder="info@alux.kz">
+                    </div>
+                    <div >
+                        <p>Пароль</p>
+                        <input type="text" placeholder="Ваш текущий пароль">
+                    </div>
+                    <p>Забыли пароль?</p>
+                    <button>Войти</button>
+                </form>
+                <p>
+                    Входя в Личный кабинет, вы принимаете <br>
+Условия использования сайта
+                </p>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer_wrap ">
               <div class="footer_cont wrapper ">

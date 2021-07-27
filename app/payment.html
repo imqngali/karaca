@@ -96,8 +96,17 @@
     </nav>
     <section class="payment">
         <div class="container">
+            <div class="payment__main-header">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="payment__main-header_swiper">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <div class="payment__inner">
-                <div class="payment__tab1"">
+                <div class="payment__tab1" style="display: none;">
                     <div class="payment__items">
                         <div class="payment__header">
                             <div class="payment__header-title">Наименование</div>
@@ -187,7 +196,7 @@
                         <button class="payment__button">Продолжить</button>
                     </div>
                 </div>
-                <div class="payment__tab2" style="display: none;">
+                <div class="payment__tab2" style="display: block;">
                     <div class="product__info">
                             <div class="tabs">
                                 <a href="#Описание" class="active">Адрес доставкие</a>
@@ -195,7 +204,51 @@
                                 <a href="#Отзывы">Самовывоз</a>
                             </div>
                             <div class="tab_content">
-                                
+                                <form action="" class="payment__form">
+                                    <div class="payment__form-inner">
+                                        <div class="payment__form-wrap">
+                                            <span>Выберите вашу страну</span>
+                                            <select name="" id="" class="payment__input"></select>
+                                        </div>
+                                        <div class="payment__form-wrap">
+                                            <span>Выберите вашу страну</span>
+                                            <select name="" id="" class="payment__input"></select>
+                                        </div>
+                                        <div class="payment__form-wrap">
+                                            <span>Выберите вашу страну</span>
+                                            <input type="text" class="payment__input" placeholder="Дом">
+                                        </div>
+                                    </div>
+                                    <div class="payment__form-inner">
+                                        <div class="payment__form-wrap2">
+                                            <span>Дом</span>
+                                            <input type="text" class="payment__input" placeholder="Дом">
+                                        </div>
+                                        <div class="payment__form-wrap2">
+                                            <span>Кв</span>
+                                            <input type="text" class="payment__input" placeholder="Дом">
+                                        </div>
+                                        <div class="payment__form-wrap2">
+                                            <span>Домофон</span>
+                                            <input type="text" class="payment__input" placeholder="Дом">
+                                        </div>
+                                        <div class="payment__form-wrap2">
+                                            <span>Этаж</span>
+                                            <input type="text" class="payment__input" placeholder="Дом">
+                                        </div>
+                                    </div>
+                                    <div class="payment__form-inner">
+                                        <div class="payment__form-wrap">
+                                            <span>Укажите контактный номер</span>
+                                            <input type="text" class="payment__input" placeholder="+7 000 000 000">
+                                        </div>
+                                        <div class="payment__form-wrap">
+                                            <span>Укажите почту</span>
+                                            <input type="text" class="payment__input" placeholder="info.a-lux@bk.ru">
+                                        </div>
+                                    </div>
+                                    <button class="payment__form-button">Сохранить Адрес</button>
+                                </form>
                             </div>
                             <div class="tab_content" style="display: none">
                                 

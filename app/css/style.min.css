@@ -388,6 +388,58 @@
   height:154px
 }
 
+.payment__main-header{
+  display:flex;
+  position:relative;
+  justify-content:space-between
+}
+
+.payment__main-header>div{
+  width:24px;
+  height:24px;
+  border-radius:100%;
+  background-color:#38E31B;
+  z-index:1001;
+  border:5px solid rgba(147,223,134,0.9)
+}
+
+.payment__main-header>div:nth-child(2){
+  background-color:#00BCD4;
+  border:5px solid rgba(189,240,247,0.404)
+}
+
+.payment__main-header>div:nth-child(3){
+  background-color:#C4C4C4;
+  border:5px solid rgba(219,219,219,0.6)
+}
+
+.payment__main-header>div:last-child{
+  z-index:100;
+  border-radius:0;
+  position:absolute;
+  left:0;
+  height:4px;
+  width:100%;
+  top:50%;
+  background-color:transparent;
+  border:none;
+  transform:translateY(-50%);
+  display:flex
+}
+
+.payment__main-header>div:last-child>div{
+  width:50%;
+  height:100%
+}
+
+.payment__main-header>div:last-child>div:first-child{
+  background-color:#CCEAC7
+}
+
+.payment__main-header>div:last-child>div:last-child{
+  background-color:#C4C4C4
+}
+
 .payment__tab1{
   display:flex;
   justify-content:space-between;
@@ -531,6 +583,66 @@
 
 .payment__tab2 .product__info{
   margin-top:0 !important
+}
+
+.payment__form{
+  width:70%
+}
+
+.payment__form-inner{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between
+}
+
+.payment__form-inner span{
+  display:block;
+  margin-bottom:20px;
+  font-weight:500;
+  font-size:16px;
+  line-height:20px;
+  color:#000000
+}
+
+.payment__form-wrap{
+  width:46%;
+  margin-bottom:40px
+}
+
+.payment__form-wrap2{
+  width:20%;
+  margin-bottom:40px
+}
+
+.payment__input{
+  background:#FFFFFF;
+  border:1px solid #C4C4C4;
+  box-sizing:border-box;
+  border-radius:24px;
+  width:100%;
+  padding:10px 18px;
+  outline:none
+}
+
+.payment__tab2 .tab_content{
+  padding:80px 40px;
+  position:relative
+}
+
+.payment__form-button{
+  background:#00BCD4;
+  border-radius:24px;
+  width:22%;
+  font-weight:600;
+  font-size:16px;
+  line-height:20px;
+  text-align:center;
+  color:#FFFFFF;
+  padding:14px 0;
+  position:absolute;
+  right:0;
+  bottom:-24px;
+  outline:none
 }
 
 @media (max-width: 767px){

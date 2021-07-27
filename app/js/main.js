@@ -70,6 +70,7 @@ jQuery(document).ready(function($){
         clickCategories: $('.click_categories'),
         underCategories: $('.under_categories'),
         clickHash: [],
+        clickedTabs: 0,
         tabs: $('.tabs a'),
         tabContents: $('.tab_content'),
         currentTab: 0
@@ -126,5 +127,13 @@ jQuery(document).ready(function($){
     })
     $('.login_btn').click(function(e){
         $('.modal_auth').css("transform","scale(1)");
+    })
+    $('.modal_auth_inner_tab div').click(function(e) {
+        const cur_index = $('.modal_auth_inner_tab div').index(this);
+        $($('.modal_auth_inner_content .tab1')[states.clickedTabs]).css("display","none");
+        $($('.modal_auth_inner_tab div')[states.clickedTabs]).removeClass('current');
+        $($('.modal_auth_inner_tab div')[cur_index]).addClass('current');
+        $($('.modal_auth_inner_content .tab1')[cur_index]).css("display","block");
+        states.clickedTabs = cur_index; 
     })
 })

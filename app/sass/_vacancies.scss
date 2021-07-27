@@ -4,6 +4,10 @@
         color: white;
         border-radius: 16px;
         text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 23px;
         span{
             font-size: 20px;
             font-weight: 600;
@@ -34,6 +38,22 @@
                     textarea{
                         height: 154px;
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 990px) {
+    .vacancies{
+        &_form{
+            &_detail{
+                display: block;
+                .left{
+                    width: 100% !important;
+                }
+                .right{
+                    margin-left: 0 !important;
+                    width: 100% !important;
                 }
             }
         }

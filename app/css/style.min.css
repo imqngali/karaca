@@ -604,6 +604,10 @@
   color:#000000
 }
 
+.payment__form-inner2{
+  width:80%
+}
+
 .payment__form-wrap{
   width:46%;
   margin-bottom:40px
@@ -614,7 +618,7 @@
   margin-bottom:40px
 }
 
-.payment__input{
+.payment__input,.payment__select{
   background:#FFFFFF;
   border:1px solid #C4C4C4;
   box-sizing:border-box;
@@ -622,6 +626,14 @@
   width:100%;
   padding:10px 18px;
   outline:none
+}
+
+.payment__form-subtitle{
+  font-weight:500;
+  font-size:16px;
+  margin-top:12px;
+  line-height:20px;
+  color:#727187
 }
 
 .payment__tab2 .tab_content{
@@ -645,9 +657,66 @@
   outline:none
 }
 
+.payment__form-inner3 span{
+  font-weight:500;
+  font-size:16px;
+  line-height:20px;
+  color:#000000;
+  margin-bottom:40px;
+  display:block
+}
+
+.payment__form-inner3 input{
+  margin-right:16px
+}
+
+.payment__wrapp{
+  display:flex;
+  align-items:center
+}
+
+.payment__wrapp+.payment__wrapp{
+  margin-top:30px
+}
+
 @media (max-width: 767px){
   .payment__tab1{
     flex-wrap:wrap
+  }
+
+  .payment__inner .tab_content{
+    padding:30px 15px !important
+  }
+
+  .payment__wrapp{
+    display:flex;
+    align-items:center
+  }
+
+  .payment__wrapp+.payment__wrapp{
+    margin-top:30px;
+    margin-bottom:00px
+  }
+
+  .payment__form-inner2{
+    width:100%
+  }
+
+  .payment__form{
+    width:100%
+  }
+
+  .payment__form-button{
+    position:static;
+    width:100%
+  }
+
+  .payment__form-wrap2{
+    width:45%
+  }
+
+  .payment__form-wrap{
+    width:100%
   }
 
   .payment__items{
@@ -713,6 +782,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px){
+  .payment__form-wrap{
+    width:100%
+  }
+
   .payment__tab1{
     flex-wrap:wrap
   }

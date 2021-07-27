@@ -118,4 +118,13 @@ jQuery(document).ready(function($){
         })
     }
     $('textarea').val("");  
+
+    $('.modal_auth').click(function(e){
+        if(e.currentTarget == e.target){
+            $('.modal_auth').css("transform",'scale(0)')
+        }
+    })
+    $('.login_btn').click(function(e){
+        $('.modal_auth').css("transform","scale(1)");
+    })
 })

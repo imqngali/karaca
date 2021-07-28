@@ -1,840 +1,1308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="./css/mytailwind.css">
-    <link rel="icon" type="image/png" href="./img/favicon.ico"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <link rel="stylesheet" href="./css/mytailwind.css" />
+        <link rel="icon" type="image/png" href="./img/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap" rel="stylesheet">
-    <title>Main</title>
-</head>
-<body>
-    <nav class="header">
-        <div class="header__container container">
-            <div class="header__main-links">
-                <div class="main-nav" >
-                    <ul class="main-nav__ul">
-                        <li>О нас</li>
-                        <li>Доставка и оплата</li>
-                        <li>Связаться с нами</li>
-                    </ul>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Main</title>
+    </head>
+    <body>
+        <nav class="header">
+            <div class="header__container container">
+                <div class="header__main-links">
+                    <div class="main-nav">
+                        <ul class="main-nav__ul">
+                            <li>О нас</li>
+                            <li>Доставка и оплата</li>
+                            <li>Связаться с нами</li>
+                        </ul>
+                    </div>
+                    <div class="langs">
+                        <ul class="langs__ul">
+                            <li>Қаз</li>
+                            <li style="background: #00bcd4; color: white">
+                                Рус
+                            </li>
+                            <li>Eng</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="langs">
-                    <ul class="langs__ul">
-                        <li>Қаз</li>
-                        <li style="background:#00BCD4;color:white">Рус</li>
-                        <li>Eng</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header__main-links_mobile">
-                <div>
-                    <img id="logo" src="./img/Logo.svg" alt="Karaca Home">
-                </div>
-                <div class="flex items-center">
+                <div class="header__main-links_mobile">
+                    <div>
+                        <img id="logo" src="./img/Logo.svg" alt="Karaca Home" />
+                    </div>
                     <div class="flex items-center">
-                        <img src="./img/blue_burger.svg" alt="" class="mr-rem1 inline-block">
-                        <span class=" text-main_color text-sm font-semibold">Войти</span>
-                    </div>
-                    <div class="header__main-links_mobile_burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="header__funcs">
-                <img id="logo" src="./img/Logo.svg" alt="Karaca Home" >
-                <div class="search-form_wrap">
-                    <form action="/action_page.php">
-                        <input type="search" placeholder="Я ищу">
-                        <img type="submit" src="./img/search.svg">
-                      </form>
-                </div>
-                <div class="btns">
-                    <img src="./img/shopping-cart.svg">
-                    <img src="./img/heart.svg">
-                    <div class="login_btn">
-                        <img src="./img/person.svg">
-                        <span>Войти</span>
+                        <div class="flex items-center">
+                            <img
+                                src="./img/blue_burger.svg"
+                                alt=""
+                                class="mr-rem1 inline-block"
+                            />
+                            <span class="text-main_color text-sm font-semibold"
+                                >Войти</span
+                            >
+                        </div>
+                        <div class="header__main-links_mobile_burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="header__funcs_mobile">
-                <div class="search-form_wrap">
-                    <form action="/action_page.php">
-                        <input type="search" placeholder="Я ищу">
-                        <img type="submit" src="./img/search.svg">
-                      </form>
-                </div>
-                <div class="btns">
-                    <img src="./img/shopping-cart.svg">
-                    
-                </div>
-            </div>
-            
-            <div class="header__cats">
-                <ul class="cats">
-                    <li><a href="#" style="color:#00BCD4">Главная</a></li>
-                    <li><a href="#">Новинки</a></li>
-                    <li><a href="#">Кухня</a></li>
-                    <li><a href="#">Посуда</a></li>
-                    <li><a href="#">Бытовая техника</a></li>
-                    <li><a href="#">Текстиль для дома</a></li>
-                    <li><a href="#">Аксессуары</a></li>
-                    <li><a href="#"><img src="./img/sales_fire.svg" style="margin-right: 10px;height: 18px;">Скидки</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="w-full bg-white relative top_images">
-        <div class="wrapper container m-auto relative">
-            <div class="images_contents" style="width: 100%;overflow: hidden;">
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/Ellipse 1.png" width="100px" height="auto">
-                        <span>Karaca</span>
+                <div class="header__funcs">
+                    <img id="logo" src="./img/Logo.svg" alt="Karaca Home" />
+                    <div class="search-form_wrap">
+                        <form action="/action_page.php">
+                            <input type="search" placeholder="Я ищу" />
+                            <img type="submit" src="./img/search.svg" />
+                        </form>
+                    </div>
+                    <div class="btns">
+                        <img src="./img/shopping-cart.svg" />
+                        <img src="./img/heart.svg" />
+                        <div class="login_btn">
+                            <img src="./img/person.svg" />
+                            <span>Войти</span>
+                        </div>
                     </div>
                 </div>
-                <div class="firma"> 
-                    <div class="firma">
-                        <img src="./img/firstSlide.svg" width="100px" height="auto">
-                        <span>Karaca</span>
+                <div class="header__funcs_mobile">
+                    <div class="search-form_wrap">
+                        <form action="/action_page.php">
+                            <input type="search" placeholder="Я ищу" />
+                            <img type="submit" src="./img/search.svg" />
+                        </form>
+                    </div>
+                    <div class="btns">
+                        <img src="./img/shopping-cart.svg" />
                     </div>
                 </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/secondSlide.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/thirdSlide.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/fourth.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/fifth.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/sixth.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/seventh.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/seventh.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/sixth.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                <div class="firma">
-                    <div class="firma">
-                        <img src="./img/fifth.svg" width="100px" height="auto">
-                        <span>Karaca</span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="arrs top_images_arrows absolute left-none top-1/2 transform -translate-y-1/2 h-full w-full">
-            <img class="swiper-button-prev" src="./img/ar_left.svg">
-            <img class="swiper-button-next" src="./img/ar_right.svg">
-        </div>
-    </div>
 
-    <main class="main">
-        <div class="banner-container container">
-            <!-- Additional required wrapper -->
-            <div>
-            <!-- Slides -->
-                <div class="banner_slider overflow-hidden">
-                    <div >
-                        <div class="banner flex">
-                            <div class="bg-main_color flex items-center justify-center ">
-                                <div class="fromTabletToPhone:text-center w-2/3">
-                                    <h4 class="text-1.4rem font-semibold text-white">Все, что нужно для вашего уюта вы найдете у нас!</h4>
-                                    <span class="text-rem1 block text-white my-1rem">Посуда, техника, акссесуары по специальной акции</span>
-                                    <button class="bg-white py-0.7rem   px-3.4rem inline-block text-main_color rounded-full">Подробнее</button>
-                                </div>
-                            </div>
-                            <div class="w/full">
-                                <img src="./img/banner_bg.svg" width="100%" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <div class="banner flex">
-                            <div class="bg-main_color flex items-center justify-center ">
-                                <div class="fromTabletToPhone:text-center w-2/3">
-                                    <h4 class="text-1.4rem font-semibold text-white">Все, что нужно для вашего уюта вы найдете у нас!</h4>
-                                    <span class="text-rem1 block text-white my-1rem">Посуда, техника, акссесуары по специальной акции</span>
-                                    <button class="bg-white py-0.7rem   px-3.4rem inline-block text-main_color rounded-full">Подробнее</button>
-                                </div>
-                            </div>
-                            <div class="w/full">
-                                <img src="./img/banner_bg.svg" width="100%" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="banner_btns">
-                    <img class="banner-button-prev" src="./img/vector_left.svg">
-                    <div class="swiper-pagination" ></div>
-                    <img class="banner-button-next" src="./img/vector_right.svg">
+                <div class="header__cats">
+                    <ul class="cats">
+                        <li><a href="#" style="color: #00bcd4">Главная</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Кухня</a></li>
+                        <li><a href="#">Посуда</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                        <li><a href="#">Текстиль для дома</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="./img/sales_fire.svg"
+                                    style="margin-right: 10px; height: 18px"
+                                />Скидки</a
+                            >
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        
-        <!-- --------------------Shop-grid -->
-
-        <h1>Бестселлеры недели</h1>
-
-        <div class="catalog container">
-            <div class="multiple_slider w-full overflow-hidden">
-                <div class="relative inner_card" >
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo.png" alt="">
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Silver Stone Granit
-                        </h4>
-                        <p class="product-card_descr">Вок-сковорода для индукционной плиты
-                            28 см</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+        </nav>
+        <div class="w-full bg-white relative top_images">
+            <div class="wrapper container m-auto relative">
+                <div
+                    class="images_contents"
+                    style="width: 100%; overflow: hidden"
+                >
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/Ellipse 1.png"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card ">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo.png" alt="">
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Silver Stone Granit
-                        </h4>
-                        <p class="product-card_descr">Вок-сковорода для индукционной плиты
-                            28 см</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
-                        </div>
-                    </div>    
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo_2.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Fine Pearl Selina
-                        </h4>
-                        <p class="product-card_descr">Набор посуды из 62 предметов, квадратный</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/firstSlide.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo_2.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Fine Pearl Selina
-                        </h4>
-                        <p class="product-card_descr">Набор посуды из 62 предметов, квадратный</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/secondSlide.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card3.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Anka
-                        </h4>
-                        <p class="product-card_descr">Набор бокалов
-                            из 6 штук</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/thirdSlide.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div> 
-                        <img class="product-card_img" src="./img/card4.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Silver Stone Granit
-                        </h4>
-                        <p class="product-card_descr">Вок-сковорода для индукционной плиты
-                            28 см</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/fourth.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo_2.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Fine Pearl Selina
-                        </h4>
-                        <p class="product-card_descr">Набор посуды из 62 предметов, квадратный</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/fifth.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo_2.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Fine Pearl Selina
-                        </h4>
-                        <p class="product-card_descr">Набор посуды из 62 предметов, квадратный</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/sixth.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card3.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Anka
-                        </h4>
-                        <p class="product-card_descr">Набор бокалов
-                            из 6 штук</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/seventh.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div> 
-                        <img class="product-card_img" src="./img/card4.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Silver Stone Granit
-                        </h4>
-                        <p class="product-card_descr">Вок-сковорода для индукционной плиты
-                            28 см</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/seventh.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo_2.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Fine Pearl Selina
-                        </h4>
-                        <p class="product-card_descr">Набор посуды из 62 предметов, квадратный</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/sixth.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo_2.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Fine Pearl Selina
-                        </h4>
-                        <p class="product-card_descr">Набор посуды из 62 предметов, квадратный</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card3.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Anka
-                        </h4>
-                        <p class="product-card_descr">Набор бокалов
-                            из 6 штук</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div> 
-                        <img class="product-card_img" src="./img/card4.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Silver Stone Granit
-                        </h4>
-                        <p class="product-card_descr">Вок-сковорода для индукционной плиты
-                            28 см</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card-photo_2.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Fine Pearl Selina
-                        </h4>
-                        <p class="product-card_descr">Набор посуды из 62 предметов, квадратный</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div>
-                        <img class="product-card_img" src="./img/card3.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Anka
-                        </h4>
-                        <p class="product-card_descr">Набор бокалов
-                            из 6 штук</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="inner_card relative">
-                    <div class="product-card">
-                        <div class="text-right product-card_hover-open">
-                            <img src="./img/love.svg" alt="" class="mb-0.7rem ">
-                        </div> 
-                        <img class="product-card_img" src="./img/card4.png" >
-                        <div class="card_stars">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                            <img src="./img/star.svg">
-                        </div>
-                        <h4 class="product-card_title">
-                            Karaca Silver Stone Granit
-                        </h4>
-                        <p class="product-card_descr">Вок-сковорода для индукционной плиты
-                            28 см</p>
-                        <span class="product-card_price">11 990 тг</span>
-                        <div class="product-card_buttons product-card_hover-open">
-                            <button>Добавить в корзину</button>
-                            <button>Быстрый просмотр</button>
+                    <div class="firma">
+                        <div class="firma">
+                            <img
+                                src="./img/fifth.svg"
+                                width="100px"
+                                height="auto"
+                            />
+                            <span>Karaca</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="pagination_ flex items-center justify-end">
-                <img class="banner-button-prev2 mr-rem1 cursor-pointer" src="./img/vector_left.svg">
-                <div class="cat_paginator">
-                
-                </div>
-                <img class="banner-button-next2 ml-rem1 cursor-pointer" src="./img/vector_right.svg">
+            <div
+                class="
+                    arrs
+                    top_images_arrows
+                    absolute
+                    left-none
+                    top-1/2
+                    transform
+                    -translate-y-1/2
+                    h-full
+                    w-full
+                "
+            >
+                <img class="swiper-button-prev" src="./img/ar_left.svg" />
+                <img class="swiper-button-next" src="./img/ar_right.svg" />
             </div>
         </div>
 
-        <div class="container">
-            <div class="small_banners">
-                <div class="small_banner" style="background-image: url('./img/banner_bg1.png');">
-                    <div class="mb-1.4rem">
-                        <h4 class=" mb-0.7rem font-semibold">Все, что нужно для вашего уюта в доме вы найдете у нас!</h4>
-                        <span>Посуда, техника, акссесуары по специальной акции</span>
-                    </div>
-                    <button>Подробнее</button>
-                </div>
-                <div class="small_banner" style="background-image: url('./img/banner_bg2.png');">
-                    <div class="mb-1.4rem">
-                        <h4 class=" mb-0.7rem font-semibold">Все, что нужно для вашего уюта в доме вы найдете у нас!</h4>
-                        <span>Посуда, техника, акссесуары по специальной акции</span>
-                    </div>
-                    <button>Подробнее</button>
-                </div>
-            </div>
-        </div>
-
-
-        <h1>Актуальные скидки</h1>
-        <div class="discount_block">
-            <div class="container">
-
-                <div class="grad_banner">
-                    <span>Скидки на посуду -50% 
-                        конца мая</span>
-                    <img src="./img/image.svg">
-                </div>
-                
-            </div>
-        </div>
-
-        <h1>Актуальные скидки</h1>
-
-
-        <h1>Оставьте нам свою почту для рассылок с акциями и скидок!</h1>
-        <div class="container">
-            <div class="callback_wrappper mt-5">
-                <form action="/action_page.php" method="get">
-                    <div>
-                        <input type="text" placeholder="Ваш e-mail" required><br>
-                        <button type="submit">Подписаться</button>
-                    </div>
-                    <div class="flex items-center relative mt-3.2rem">
-                        <input type="checkbox" required class="leading-1rem" id="vehicle1">
-                        <label for="vehicle1" class="text-rem1 font-medium leading-1rem m-auto"> Я согласен на обработку персональных данных  и с уловиями подписки </label><br>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="custom_modal justify-center items-center">
-            <div class="custom_modal__inner bg-white p-3rem">
-                <div class="custom_modal__block flex">
-                    <div>
-                        <img src="./img/card3.png" alt="" class="h-full object-cover">
-                    </div>
-                    <div class="ml-rem2 flex flex-col items-start justify-between">
-                        <div>
-                            <img src="./img/star.svg" alt="">
-                            <img src="./img/star.svg" alt="">
-                            <img src="./img/star.svg" alt="">
-                            <img src="./img/star.svg" alt="">
-                            <img src="./img/star.svg" alt="">
-                        </div>
-                        <div>
-                            <h5 class="mt-rem1 text-1.6rem font-medium">Fine Pearl Selina</h5>
-                            <p>Набор посуды из 62 предметов, квадратный</p>
-                            <span class="text-gray text-0.7rem">Артикул: 05082008</span>
-                        </div>
-                        <div>
-                            <div class="mt-1rem">
-                                <h5 class="mt-rem1 text-1.6rem font-medium ml-0.7rem">11 990тг</h5>
-                            </div>
-                            <div class="btns flex items-center mt-1.2rem">
-                                <div class="amount_counter flex items-center border-lightGray border rounded-full">
-                                    <img src="./img/minus.svg" alt="" class="mr-rem1">
-                                    <span class="font-semibold">1</span>
-                                    <img src="./img/plus.svg" alt="" class="ml-rem1">
-                                </div>
-                                <div class="button_ add_to_store mt-auto">
-                                    Добавить в корзину
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-rem1">
-                            <img src="./img/return.svg" alt="">
-                            <span class="ml-rem1 text-rem1">14 дней на возврат</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <div class="modal_auth">
-        <div class="modal_auth_inner">
-            <div class="modal_auth_inner_tab">
-                <div class="current">
-                    <span>Вход</span>
-                </div>
+        <main class="main">
+            <div class="banner-container container">
+                <!-- Additional required wrapper -->
                 <div>
-                    <span>Регистрация</span>
+                    <!-- Slides -->
+                    <div class="banner_slider overflow-hidden">
+                        <div>
+                            <div class="banner flex">
+                                <div
+                                    class="
+                                        bg-main_color
+                                        flex
+                                        items-center
+                                        justify-center
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            fromTabletToPhone:text-center
+                                            w-2/3
+                                        "
+                                    >
+                                        <h4
+                                            class="
+                                                text-1.4rem
+                                                font-semibold
+                                                text-white
+                                            "
+                                        >
+                                            Все, что нужно для вашего уюта вы
+                                            найдете у нас!
+                                        </h4>
+                                        <span
+                                            class="
+                                                text-rem1
+                                                block
+                                                text-white
+                                                my-1rem
+                                            "
+                                            >Посуда, техника, акссесуары по
+                                            специальной акции</span
+                                        >
+                                        <button
+                                            class="
+                                                bg-white
+                                                py-0.7rem
+                                                px-3.4rem
+                                                inline-block
+                                                text-main_color
+                                                rounded-full
+                                            "
+                                        >
+                                            Подробнее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="w/full">
+                                    <img
+                                        src="./img/banner_bg.svg"
+                                        width="100%"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="banner flex">
+                                <div
+                                    class="
+                                        bg-main_color
+                                        flex
+                                        items-center
+                                        justify-center
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            fromTabletToPhone:text-center
+                                            w-2/3
+                                        "
+                                    >
+                                        <h4
+                                            class="
+                                                text-1.4rem
+                                                font-semibold
+                                                text-white
+                                            "
+                                        >
+                                            Все, что нужно для вашего уюта вы
+                                            найдете у нас!
+                                        </h4>
+                                        <span
+                                            class="
+                                                text-rem1
+                                                block
+                                                text-white
+                                                my-1rem
+                                            "
+                                            >Посуда, техника, акссесуары по
+                                            специальной акции</span
+                                        >
+                                        <button
+                                            class="
+                                                bg-white
+                                                py-0.7rem
+                                                px-3.4rem
+                                                inline-block
+                                                text-main_color
+                                                rounded-full
+                                            "
+                                        >
+                                            Подробнее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="w/full">
+                                    <img
+                                        src="./img/banner_bg.svg"
+                                        width="100%"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner_btns">
+                        <img
+                            class="banner-button-prev"
+                            src="./img/vector_left.svg"
+                        />
+                        <div class="swiper-pagination"></div>
+                        <img
+                            class="banner-button-next"
+                            src="./img/vector_right.svg"
+                        />
+                    </div>
                 </div>
             </div>
-            <div class="modal_auth_inner_content">
-                <div class="google_block">
-                    <img src="./img/google.svg" alt="">
-                    <span>Google </span>
+
+            <!-- --------------------Shop-grid -->
+
+            <h1>Бестселлеры недели</h1>
+
+            <div class="catalog container">
+                <div class="multiple_slider w-full overflow-hidden">
+                    <div class="relative inner_card">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo.png"
+                                alt=""
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Karaca Silver Stone Granit
+                            </h4>
+                            <p class="product-card_descr">
+                                Вок-сковорода для индукционной плиты 28 см
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo.png"
+                                alt=""
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Karaca Silver Stone Granit
+                            </h4>
+                            <p class="product-card_descr">
+                                Вок-сковорода для индукционной плиты 28 см
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo_2.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Fine Pearl Selina
+                            </h4>
+                            <p class="product-card_descr">
+                                Набор посуды из 62 предметов, квадратный
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo_2.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Fine Pearl Selina
+                            </h4>
+                            <p class="product-card_descr">
+                                Набор посуды из 62 предметов, квадратный
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card3.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">Karaca Anka</h4>
+                            <p class="product-card_descr">
+                                Набор бокалов из 6 штук
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card4.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Karaca Silver Stone Granit
+                            </h4>
+                            <p class="product-card_descr">
+                                Вок-сковорода для индукционной плиты 28 см
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo_2.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Fine Pearl Selina
+                            </h4>
+                            <p class="product-card_descr">
+                                Набор посуды из 62 предметов, квадратный
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo_2.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Fine Pearl Selina
+                            </h4>
+                            <p class="product-card_descr">
+                                Набор посуды из 62 предметов, квадратный
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card3.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">Karaca Anka</h4>
+                            <p class="product-card_descr">
+                                Набор бокалов из 6 штук
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card4.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Karaca Silver Stone Granit
+                            </h4>
+                            <p class="product-card_descr">
+                                Вок-сковорода для индукционной плиты 28 см
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo_2.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Fine Pearl Selina
+                            </h4>
+                            <p class="product-card_descr">
+                                Набор посуды из 62 предметов, квадратный
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo_2.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Fine Pearl Selina
+                            </h4>
+                            <p class="product-card_descr">
+                                Набор посуды из 62 предметов, квадратный
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card3.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">Karaca Anka</h4>
+                            <p class="product-card_descr">
+                                Набор бокалов из 6 штук
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card4.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Karaca Silver Stone Granit
+                            </h4>
+                            <p class="product-card_descr">
+                                Вок-сковорода для индукционной плиты 28 см
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card-photo_2.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Fine Pearl Selina
+                            </h4>
+                            <p class="product-card_descr">
+                                Набор посуды из 62 предметов, квадратный
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card3.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">Karaca Anka</h4>
+                            <p class="product-card_descr">
+                                Набор бокалов из 6 штук
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_card relative">
+                        <div class="product-card">
+                            <div class="text-right product-card_hover-open">
+                                <img
+                                    src="./img/love.svg"
+                                    alt=""
+                                    class="mb-0.7rem"
+                                />
+                            </div>
+                            <img
+                                class="product-card_img"
+                                src="./img/card4.png"
+                            />
+                            <div class="card_stars">
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                                <img src="./img/star.svg" />
+                            </div>
+                            <h4 class="product-card_title">
+                                Karaca Silver Stone Granit
+                            </h4>
+                            <p class="product-card_descr">
+                                Вок-сковорода для индукционной плиты 28 см
+                            </p>
+                            <span class="product-card_price">11 990 тг</span>
+                            <div
+                                class="
+                                    product-card_buttons product-card_hover-open
+                                "
+                            >
+                                <button>Добавить в корзину</button>
+                                <button>Быстрый просмотр</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <form action="post">
+                <div class="pagination_ flex items-center justify-end">
+                    <img
+                        class="banner-button-prev2 mr-rem1 cursor-pointer"
+                        src="./img/vector_left.svg"
+                    />
+                    <div class="cat_paginator"></div>
+                    <img
+                        class="banner-button-next2 ml-rem1 cursor-pointer"
+                        src="./img/vector_right.svg"
+                    />
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="small_banners">
+                    <div
+                        class="small_banner"
+                        style="background-image: url('./img/banner_bg1.png')"
+                    >
+                        <div class="mb-1.4rem">
+                            <h4 class="mb-0.7rem font-semibold">
+                                Все, что нужно для вашего уюта в доме вы найдете
+                                у нас!
+                            </h4>
+                            <span
+                                >Посуда, техника, акссесуары по специальной
+                                акции</span
+                            >
+                        </div>
+                        <button>Подробнее</button>
+                    </div>
+                    <div
+                        class="small_banner"
+                        style="background-image: url('./img/banner_bg2.png')"
+                    >
+                        <div class="mb-1.4rem">
+                            <h4 class="mb-0.7rem font-semibold">
+                                Все, что нужно для вашего уюта в доме вы найдете
+                                у нас!
+                            </h4>
+                            <span
+                                >Посуда, техника, акссесуары по специальной
+                                акции</span
+                            >
+                        </div>
+                        <button>Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Актуальные скидки</h1>
+            <div class="discount_block">
+                <div class="container">
+                    <div class="grad_banner">
+                        <span>Скидки на посуду -50% конца мая</span>
+                        <img src="./img/image.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <h1>Актуальные скидки</h1>
+
+            <h1>Оставьте нам свою почту для рассылок с акциями и скидок!</h1>
+            <div class="container">
+                <div class="callback_wrappper mt-5">
+                    <form action="/action_page.php" method="get">
+                        <div>
+                            <input
+                                type="text"
+                                placeholder="Ваш e-mail"
+                                required
+                            /><br />
+                            <button type="submit">Подписаться</button>
+                        </div>
+                        <div class="flex items-center relative mt-3.2rem">
+                            <input
+                                type="checkbox"
+                                required
+                                class="leading-1rem"
+                                id="vehicle1"
+                                checked
+                            />
+                            <label
+                                for="vehicle1"
+                                class="
+                                    text-rem1
+                                    font-medium
+                                    leading-1rem
+                                    m-auto
+                                "
+                            >
+                                Я согласен на обработку персональных данных и с
+                                уловиями подписки </label
+                            ><br />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="custom_modal justify-center items-center">
+                <div class="custom_modal__inner bg-white p-3rem">
+                    <div class="custom_modal__block flex">
+                        <div>
+                            <img
+                                src="./img/card3.png"
+                                alt=""
+                                class="h-full object-cover"
+                            />
+                        </div>
+                        <div
+                            class="
+                                ml-rem2
+                                flex flex-col
+                                items-start
+                                justify-between
+                            "
+                        >
+                            <div>
+                                <img src="./img/star.svg" alt="" />
+                                <img src="./img/star.svg" alt="" />
+                                <img src="./img/star.svg" alt="" />
+                                <img src="./img/star.svg" alt="" />
+                                <img src="./img/star.svg" alt="" />
+                            </div>
+                            <div>
+                                <h5 class="mt-rem1 text-1.6rem font-medium">
+                                    Fine Pearl Selina
+                                </h5>
+                                <p>Набор посуды из 62 предметов, квадратный</p>
+                                <span class="text-gray text-0.7rem"
+                                    >Артикул: 05082008</span
+                                >
+                            </div>
+                            <div>
+                                <div class="mt-1rem">
+                                    <h5
+                                        class="
+                                            mt-rem1
+                                            text-1.6rem
+                                            font-medium
+                                            ml-0.7rem
+                                        "
+                                    >
+                                        11 990тг
+                                    </h5>
+                                </div>
+                                <div class="btns flex items-center mt-1.2rem">
+                                    <div
+                                        class="
+                                            amount_counter
+                                            flex
+                                            items-center
+                                            border-lightGray border
+                                            rounded-full
+                                        "
+                                    >
+                                        <img
+                                            src="./img/minus.svg"
+                                            alt=""
+                                            class="mr-rem1"
+                                        />
+                                        <span class="font-semibold">1</span>
+                                        <img
+                                            src="./img/plus.svg"
+                                            alt=""
+                                            class="ml-rem1"
+                                        />
+                                    </div>
+                                    <div class="button_ add_to_store mt-auto">
+                                        Добавить в корзину
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-rem1">
+                                <img src="./img/return.svg" alt="" />
+                                <span class="ml-rem1 text-rem1"
+                                    >14 дней на возврат</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modal_auth">
+            <div class="modal_auth_inner">
+                <div class="modal_auth_inner_tab">
+                    <div class="current">
+                        <span>Вход</span>
+                    </div>
                     <div>
-                        <p>Ваша почта</p>
-                        <input type="email" placeholder="info@alux.kz">
+                        <span>Регистрация</span>
                     </div>
-                    <div >
-                        <p>Пароль</p>
-                        <input type="text" placeholder="Ваш текущий пароль">
+                </div>
+                <div class="modal_auth_inner_content">
+                    <div class="google_block">
+                        <img src="./img/google.svg" alt="" />
+                        <span>Google </span>
                     </div>
-                    <p>Забыли пароль?</p>
-                    <button>Войти</button>
-                </form>
-                <p>
-                    Входя в Личный кабинет, вы принимаете <br>
-Условия использования сайта
-                </p>
+                    <form action="post">
+                        <div>
+                            <p>Ваша почта</p>
+                            <input type="email" placeholder="info@alux.kz" />
+                        </div>
+                        <div>
+                            <p>Пароль</p>
+                            <input
+                                type="text"
+                                placeholder="Ваш текущий пароль"
+                            />
+                        </div>
+                        <p>Забыли пароль?</p>
+                        <button>Войти</button>
+                    </form>
+                    <p>
+                        Входя в Личный кабинет, вы принимаете <br />
+                        Условия использования сайта
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <footer>
-        <div class="footer_wrap ">
-              <div class="footer_cont wrapper ">
-                  <div class="footer_col">
-                      <img src="./img/logo_white.svg" alt="Karaca Home">
-                      <div class="insta_block">
-                          <div class="insta_block_title">
-                              <img src="./img/instagram.svg">
-                              Подпишитесь на нас в Instagram!
-                          </div>
-                          <div class="insta_info">
-                              <a href="#">@karaca_kz</a>
-                              <a href="#">@karaca_almaty</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="footer_col">
-                      <h4>О компании</h4>
-                      <ul>
-                          <li>О нас</li>
-                          <li>Контакты</li>
-                          <li>Доставка и оплата</li>
-                          <li>Возврат покупки</li>
-                          <li>Хотите работать с нами?</li>
-                      </ul>
-                  </div>
-                  <div class="footer_col">
-                      <h4>Категории</h4>
-                      <ul>
-                          <li>Новинки</li>
-                          <li>Кухня</li>
-                          <li>Посуда</li>
-                          <li>Бытовая техника</li>
-                          <li>Текстиль для дома</li>
-                          <li>Аксессуары</li>
-                      </ul>
-                  </div>
-                  <div class="footer_col">
-                      <h4>Акционные пакеты</h4>
-                      <ul>
-                          <li>Бытовая техника</li>
-                          <li>Аксессуары для дома</li>
-                          <li>Наборы и комплекты</li>
-                          <li>Столовый сервиз</li>
-                          <li>Детская комната</li>
-                      </ul>
-                  </div>
-              </div>
-        </div>
-  </footer>
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_cont wrapper">
+                    <div class="footer_col">
+                        <img src="./img/logo_white.svg" alt="Karaca Home" />
+                        <div class="insta_block">
+                            <div class="insta_block_title">
+                                <img src="./img/instagram.svg" />
+                                Подпишитесь на нас в Instagram!
+                            </div>
+                            <div class="insta_info">
+                                <a href="#">@karaca_kz</a>
+                                <a href="#">@karaca_almaty</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_col">
+                        <h4>О компании</h4>
+                        <ul>
+                            <li>О нас</li>
+                            <li>Контакты</li>
+                            <li>Доставка и оплата</li>
+                            <li>Хотите работать с нами?</li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Категории</h4>
+                        <ul>
+                            <li>Новинки</li>
+                            <li>Кухня</li>
+                            <li>Посуда</li>
+                            <li>Бытовая техника</li>
+                            <li>Текстиль для дома</li>
+                            <li>Аксессуары</li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Акционные пакеты</h4>
+                        <ul>
+                            <li>Бытовая техника</li>
+                            <li>Аксессуары для дома</li>
+                            <li>Наборы и комплекты</li>
+                            <li>Столовый сервиз</li>
+                            <li>Детская комната</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
+        <!-- --------------------------------SCRIPTS -->
 
-    <!-- --------------------------------SCRIPTS -->
-
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="./js/libs.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="./js/libs.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
 </html>

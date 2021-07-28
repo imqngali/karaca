@@ -1224,7 +1224,7 @@ html{
   font-weight:normal;
   font-size:16px;
   line-height:20px;
-  margin-right:15px
+  margin-right:32px
 }
 
 .langs__ul li{
@@ -1375,7 +1375,7 @@ input:focus{
 }
 
 .multiple_slider .slick-slide>div>div{
-  width:22% !important
+  width:25% !important
 }
 
 .firma{
@@ -1577,7 +1577,9 @@ img{
 }
 
 .inner_card{
-  margin:15px
+  width:25%;
+  padding:0 15px;
+  margin:15px 0
 }
 
 .product-card{
@@ -1696,7 +1698,7 @@ img{
 
 .callback_wrappper input{
   margin-right:15px;
-  max-height:40px
+  max-height:46px
 }
 
 .callback_wrappper input[type="text"]{
@@ -1711,8 +1713,8 @@ img{
 
 .callback_wrappper button{
   font-weight:600;
-  max-height:40px;
-  padding:12px 55px;
+  max-height:46px;
+  padding:13px 55px;
   background:#00bcd4;
   border-radius:20px;
   border:none;

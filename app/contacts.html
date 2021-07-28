@@ -1,279 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="./css/mytailwind.css">
-    <link rel="icon" type="image/png" href="./img/favicon.ico"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <link rel="stylesheet" href="./css/mytailwind.css" />
+        <link rel="icon" type="image/png" href="./img/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap" rel="stylesheet">
-    <title>Main</title>
-</head>
-<body>
-    <nav class="header">
-        <div class="header__container container">
-            <div class="header__main-links">
-                <div class="main-nav" >
-                    <ul class="main-nav__ul">
-                        <li>О нас</li>
-                        <li>Доставка и оплата</li>
-                        <li>Связаться с нами</li>
-                    </ul>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Main</title>
+    </head>
+    <body>
+        <nav class="header">
+            <div class="header__container container">
+                <div class="header__main-links">
+                    <div class="main-nav">
+                        <ul class="main-nav__ul">
+                            <li>О нас</li>
+                            <li>Доставка и оплата</li>
+                            <li>Связаться с нами</li>
+                        </ul>
+                    </div>
+                    <div class="langs">
+                        <ul class="langs__ul">
+                            <li>Қаз</li>
+                            <li style="background: #00bcd4; color: white">
+                                Рус
+                            </li>
+                            <li>Eng</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="langs">
-                    <ul class="langs__ul">
-                        <li>Қаз</li>
-                        <li style="background:#00BCD4;color:white">Рус</li>
-                        <li>Eng</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header__main-links_mobile">
-                <div>
-                    <img id="logo" src="./img/Logo.svg" alt="Karaca Home">
-                </div>
-                <div class="flex items-center">
+                <div class="header__main-links_mobile">
+                    <div>
+                        <img id="logo" src="./img/Logo.svg" alt="Karaca Home" />
+                    </div>
                     <div class="flex items-center">
-                        <img src="./img/blue_burger.svg" alt="" class="mr-rem1 inline-block">
-                        <span class=" text-main_color text-sm font-semibold">Войти</span>
-                    </div>
-                    <div class="header__main-links_mobile_burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="header__funcs">
-                <img id="logo" src="./img/Logo.svg" alt="Karaca Home" >
-                <div class="search-form_wrap">
-                    <form action="/action_page.php">
-                        <input type="search" placeholder="Я ищу">
-                        <img type="submit" src="./img/search.svg">
-                      </form>
-                </div>
-                <div class="btns">
-                    <img src="./img/shopping-cart.svg">
-                    <img src="./img/heart.svg">
-                    <div class="login_btn">
-                        <img src="./img/person.svg">
-                        <span>Войти</span>
+                        <div class="flex items-center">
+                            <img
+                                src="./img/blue_burger.svg"
+                                alt=""
+                                class="mr-rem1 inline-block"
+                            />
+                            <span class="text-main_color text-sm font-semibold"
+                                >Войти</span
+                            >
+                        </div>
+                        <div class="header__main-links_mobile_burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="header__funcs_mobile">
-                <div class="search-form_wrap">
-                    <form action="/action_page.php">
-                        <input type="search" placeholder="Я ищу">
-                        <img type="submit" src="./img/search.svg">
-                      </form>
+                <div class="header__funcs">
+                    <img id="logo" src="./img/Logo.svg" alt="Karaca Home" />
+                    <div class="search-form_wrap">
+                        <form action="/action_page.php">
+                            <input type="search" placeholder="Я ищу" />
+                            <img type="submit" src="./img/search.svg" />
+                        </form>
+                    </div>
+                    <div class="btns">
+                        <img src="./img/shopping-cart.svg" />
+                        <img src="./img/heart.svg" />
+                        <div class="login_btn">
+                            <img src="./img/person.svg" />
+                            <span>Войти</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="btns">
-                    <img src="./img/shopping-cart.svg">
-                    
+                <div class="header__funcs_mobile">
+                    <div class="search-form_wrap">
+                        <form action="/action_page.php">
+                            <input type="search" placeholder="Я ищу" />
+                            <img type="submit" src="./img/search.svg" />
+                        </form>
+                    </div>
+                    <div class="btns">
+                        <img src="./img/shopping-cart.svg" />
+                    </div>
                 </div>
-            </div>
-            
-            <div class="header__cats">
-                <ul class="cats">
-                    <li><a href="#" style="color:#00BCD4">Главная</a></li>
-                    <li><a href="#">Новинки</a></li>
-                    <li><a href="#">Кухня</a></li>
-                    <li><a href="#">Посуда</a></li>
-                    <li><a href="#">Бытовая техника</a></li>
-                    <li><a href="#">Текстиль для дома</a></li>
-                    <li><a href="#">Аксессуары</a></li>
-                    <li><a href="#"><img src="./img/sales_fire.svg" style="margin-right: 10px;height: 18px;">Скидки</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section>
-            <div class="container">
-                <div class="contacts">
-                    <div class="left">
-                        <p>Karaca Kazakhstan в первую очередь заботится о своих клиентах и беспокоится за их комфорт и возможность выражать свое мнение и пожелания. 
 
-                            Вы можете написать нам и 
-                            мы обязательно дадим Вам обратную связь!</p>
-                        <div class="cities">
-                            <div >
-                                <h2>Алматы</h2>
+                <div class="header__cats">
+                    <ul class="cats">
+                        <li><a href="#" style="color: #00bcd4">Главная</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Кухня</a></li>
+                        <li><a href="#">Посуда</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                        <li><a href="#">Текстиль для дома</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="./img/sales_fire.svg"
+                                    style="margin-right: 10px; height: 18px"
+                                />Скидки</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="contacts">
+                        <div class="left">
+                            <p>
+                                Karaca Kazakhstan в первую очередь заботится о
+                                своих клиентах и беспокоится за их комфорт и
+                                возможность выражать свое мнение и пожелания. Вы
+                                можете написать нам и мы обязательно дадим Вам
+                                обратную связь!
+                            </p>
+                            <div class="cities">
                                 <div>
-                                    <span>Наша почта</span>
+                                    <h2>Алматы</h2>
                                     <div>
-                                        <img src="./img/fi_mail.svg" alt="">
-                                        <span>karaca_almaty@mail.ru</span>
+                                        <span>Наша почта</span>
+                                        <div>
+                                            <img
+                                                src="./img/fi_mail.svg"
+                                                alt=""
+                                            />
+                                            <span>karaca_almaty@mail.ru</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>Наши контакты</span>
+                                        <div>
+                                            <img
+                                                src="./img/u_phone-alt.svg"
+                                                alt=""
+                                            />
+                                            <span>+7 747 478 95 51</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>Наш адрес</span>
+                                        <div>
+                                            <img
+                                                src="./img/location.svg"
+                                                alt=""
+                                            />
+                                            <span
+                                                >Бостандыкский район, ул
+                                                Сейфуллина 617 <br />
+                                                ТРЦ Forum, 1 этаж</span
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <span>Наши контакты</span>
+                                    <h2>Астана</h2>
                                     <div>
-                                        <img src="./img/u_phone-alt.svg" alt="">
-                                        <span>+7 747 478 95 51</span>
+                                        <span>Наша почта</span>
+                                        <div>
+                                            <img
+                                                src="./img/fi_mail.svg"
+                                                alt=""
+                                            />
+                                            <span>karaca_almaty@mail.ru</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <span>Наш адрес</span>
                                     <div>
-                                        <img src="./img/location.svg" alt="">
-                                        <span>Бостандыкский район,
-                                            ул Сейфуллина 617 <br>
-                                            ТРЦ Forum, 1 этаж</span>
+                                        <span>Наши контакты</span>
+                                        <div>
+                                            <img
+                                                src="./img/u_phone-alt.svg"
+                                                alt=""
+                                            />
+                                            <span>+7 747 478 95 51</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div >
-                                <h2>Астана</h2>
-                                <div>
-                                    <span>Наша почта</span>
                                     <div>
-                                        <img src="./img/fi_mail.svg" alt="">
-                                        <span>karaca_almaty@mail.ru</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <span>Наши контакты</span>
-                                    <div>
-                                        <img src="./img/u_phone-alt.svg" alt="">
-                                        <span>+7 747 478 95 51</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <span>Наш адрес</span>
-                                    <div>
-                                        <img src="./img/location.svg" alt="">
-                                        <span>Бостандыкский район,
-                                            ул Сейфуллина 617 <br>
-                                            ТРЦ Forum, 1 этаж</span>
+                                        <span>Наш адрес</span>
+                                        <div>
+                                            <img
+                                                src="./img/location.svg"
+                                                alt=""
+                                            />
+                                            <span
+                                                >Бостандыкский район, ул
+                                                Сейфуллина 617 <br />
+                                                ТРЦ Forum, 1 этаж</span
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="right">
-                        <h1>Свяжитесь с нами!</h1>
-                        <form action="post" id="contacts">
-                            <div class="">
-                                <p>Ваше имя</p>
-                                <input type="text" placeholder="Турсын Алибекович">
-                            </div>
-                            <div class="">
-                                <p>Контактный телефон</p>
-                                <input type="text" placeholder="+7 777 7777 77 77">
-                            </div>
-                            <div class="">
-                                <p>Почта</p>
-                                <input type="text" placeholder="info@a-lux.kz">
-                            </div>
-                            <div class="">
-                                <p>Сообщение</p>
-                                <textarea placeholder="Чем мы можем вам помочь?" value="">
+                        <div class="right">
+                            <h1>Свяжитесь с нами!</h1>
+                            <form action="post" id="contacts">
+                                <div class="">
+                                    <p>Ваше имя</p>
+                                    <input
+                                        type="text"
+                                        placeholder="Турсын Алибекович"
+                                    />
+                                </div>
+                                <div class="">
+                                    <p>Контактный телефон</p>
+                                    <input
+                                        type="text"
+                                        placeholder="+7 777 7777 77 77"
+                                    />
+                                </div>
+                                <div class="">
+                                    <p>Почта</p>
+                                    <input
+                                        type="text"
+                                        placeholder="info@a-lux.kz"
+                                    />
+                                </div>
+                                <div class="">
+                                    <p>Сообщение</p>
+                                    <textarea
+                                        placeholder="Чем мы можем вам помочь?"
+                                        value=""
+                                    >
                                     </textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_cont wrapper">
+                    <div class="footer_col">
+                        <img src="./img/logo_white.svg" alt="Karaca Home" />
+                        <div class="insta_block">
+                            <div class="insta_block_title">
+                                <img src="./img/instagram.svg" />
+                                Подпишитесь на нас в Instagram!
                             </div>
-                        </form>
+                            <div class="insta_info">
+                                <a href="#">@karaca_kz</a>
+                                <a href="#">@karaca_almaty</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_col">
+                        <h4>О компании</h4>
+                        <ul>
+                            <li>О нас</li>
+                            <li>Контакты</li>
+                            <li>Доставка и оплата</li>
+                            <li>Хотите работать с нами?</li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Категории</h4>
+                        <ul>
+                            <li>Новинки</li>
+                            <li>Кухня</li>
+                            <li>Посуда</li>
+                            <li>Бытовая техника</li>
+                            <li>Текстиль для дома</li>
+                            <li>Аксессуары</li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Акционные пакеты</h4>
+                        <ul>
+                            <li>Бытовая техника</li>
+                            <li>Аксессуары для дома</li>
+                            <li>Наборы и комплекты</li>
+                            <li>Столовый сервиз</li>
+                            <li>Детская комната</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer_wrap ">
-              <div class="footer_cont wrapper ">
-                  <div class="footer_col">
-                      <img src="./img/logo_white.svg" alt="Karaca Home">
-                      <div class="insta_block">
-                          <div class="insta_block_title">
-                              <img src="./img/instagram.svg">
-                              Подпишитесь на нас в Instagram!
-                          </div>
-                          <div class="insta_info">
-                              <a href="#">@karaca_kz</a>
-                              <a href="#">@karaca_almaty</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="footer_col">
-                      <h4>О компании</h4>
-                      <ul>
-                          <li>О нас</li>
-                          <li>Контакты</li>
-                          <li>Доставка и оплата</li>
-                          <li>Возврат покупки</li>
-                          <li>Хотите работать с нами?</li>
-                      </ul>
-                  </div>
-                  <div class="footer_col">
-                      <h4>Категории</h4>
-                      <ul>
-                          <li>Новинки</li>
-                          <li>Кухня</li>
-                          <li>Посуда</li>
-                          <li>Бытовая техника</li>
-                          <li>Текстиль для дома</li>
-                          <li>Аксессуары</li>
-                      </ul>
-                  </div>
-                  <div class="footer_col">
-                      <h4>Акционные пакеты</h4>
-                      <ul>
-                          <li>Бытовая техника</li>
-                          <li>Аксессуары для дома</li>
-                          <li>Наборы и комплекты</li>
-                          <li>Столовый сервиз</li>
-                          <li>Детская комната</li>
-                      </ul>
-                  </div>
-              </div>
-        </div>
-  </footer>
-  <div class="modal_auth">
-    <div class="modal_auth_inner">
-        <div class="modal_auth_inner_tab">
-            <div class="current">
-                <span>Вход</span>
-            </div>
-            <div>
-                <span>Регистрация</span>
-            </div>
-        </div>
-        <div class="modal_auth_inner_content">
-            <div class="google_block">
-                <img src="./img/google.svg" alt="">
-                <span>Google </span>
-            </div>
-            <form action="post">
-                <div>
-                    <p>Ваша почта</p>
-                    <input type="email" placeholder="info@alux.kz">
+        </footer>
+        <div class="modal_auth">
+            <div class="modal_auth_inner">
+                <div class="modal_auth_inner_tab">
+                    <div class="current">
+                        <span>Вход</span>
+                    </div>
+                    <div>
+                        <span>Регистрация</span>
+                    </div>
                 </div>
-                <div >
-                    <p>Пароль</p>
-                    <input type="text" placeholder="Ваш текущий пароль">
+                <div class="modal_auth_inner_content">
+                    <div class="google_block">
+                        <img src="./img/google.svg" alt="" />
+                        <span>Google </span>
+                    </div>
+                    <form action="post">
+                        <div>
+                            <p>Ваша почта</p>
+                            <input type="email" placeholder="info@alux.kz" />
+                        </div>
+                        <div>
+                            <p>Пароль</p>
+                            <input
+                                type="text"
+                                placeholder="Ваш текущий пароль"
+                            />
+                        </div>
+                        <p>Забыли пароль?</p>
+                        <button>Войти</button>
+                    </form>
+                    <p>
+                        Входя в Личный кабинет, вы принимаете <br />
+                        Условия использования сайта
+                    </p>
                 </div>
-                <p>Забыли пароль?</p>
-                <button>Войти</button>
-            </form>
-            <p>
-                Входя в Личный кабинет, вы принимаете <br>
-Условия использования сайта
-            </p>
+            </div>
         </div>
-    </div>
-</div>
 
-    <!-- --------------------------------SCRIPTS -->
+        <!-- --------------------------------SCRIPTS -->
 
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="./js/libs.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="./js/libs.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
 </html>

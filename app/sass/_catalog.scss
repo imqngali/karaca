@@ -1,0 +1,24 @@
+.catalog{
+    
+    display: flex;
+    flex-wrap: wrap;
+    &>div{
+        margin-top: 32px;
+        width: 33%;
+        &>h3{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            font-size: 16px;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+    }
+}
+.catalog_section{
+    border-top: 1px solid #C4C4C4;
+}

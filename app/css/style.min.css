@@ -128,6 +128,21 @@
   fill:black !important
 }
 
+@media (max-width: 767px){
+  .profile_inner{
+    flex-wrap:wrap
+  }
+
+  .profile_menu{
+    width:100%;
+    border-radius:none !important
+  }
+
+  .profile_content{
+    width:100%
+  }
+}
+
 .profile span{
   display:inline-block
 }
@@ -1143,6 +1158,22 @@
 .modal_auth_inner_content>div>form>p{
   font-weight:500;
   margin-top:20px
+}
+
+@media (max-width: 767px){
+  .profile_content{
+    overflow:hidden;
+    position:relative
+  }
+
+  .profile_content_list_history{
+    overflow-x:scroll;
+    width:660px
+  }
+
+  .profile_content_list_history div{
+    width:650px
+  }
 }
 
 .catalog{

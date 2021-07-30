@@ -157,3 +157,17 @@
         }
     }
 }
+
+@media(max-width: 767px){
+    .profile_content{
+        overflow: hidden;
+        position: relative;
+    }
+    .profile_content_list_history{
+        overflow-x: scroll;
+        width: 660px;
+        div{
+            width: 650px;
+        }
+    }
+}

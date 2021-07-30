@@ -2516,6 +2516,22 @@ footer{
     width:100%
   }
 
+  .profile_content_list_container{
+    width:100%
+  }
+
+  .profile_content{
+    padding:40px 0
+  }
+
+  .profile_content_forgot{
+    padding:0 25px
+  }
+
+  .profile_content_forgot>form{
+    width:100%
+  }
+
   .product__main__info{
     width:100%
   }

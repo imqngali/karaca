@@ -1066,9 +1066,10 @@
   position:fixed;
   left:0;
   justify-content:center;
+  z-index:11;
   align-items:center;
   transition:0.4s all;
-  transform:scale(0);
+  transform:scale(1);
   top:0;
   background-color:rgba(0,0,0,0.3)
 }
@@ -1161,6 +1162,14 @@
 }
 
 @media (max-width: 767px){
+  .modal_auth_inner_tab>div{
+    padding:20px 10px
+  }
+
+  .modal_auth_inner_content>div{
+    padding:10px 15px
+  }
+
   .profile_content{
     overflow:hidden;
     position:relative
@@ -1176,22 +1185,22 @@
   }
 }
 
-.catalog{
+.catalogs{
   display:flex;
   flex-wrap:wrap
 }
 
-.catalog>div{
+.catalogs>div{
   margin-top:32px;
   width:33%
 }
 
-.catalog>div>h3{
+.catalogs>div>h3{
   font-size:20px;
   font-weight:500
 }
 
-.catalog>div a{
+.catalogs>div a{
   display:block;
   text-decoration:none;
   color:#000000;
@@ -1550,13 +1559,13 @@ input:focus{
   color:white
 }
 
-.cat_paginator .slick-dots{
+.cat_paginator .slick-dots,.cat_paginator2 .slick-dots{
   display:flex !important;
   align-items:center;
   margin-bottom:0
 }
 
-.cat_paginator .slick-dots li{
+.cat_paginator .slick-dots li,.cat_paginator2 .slick-dots li{
   margin:0 10px;
   border-radius:100%;
   font-size:0;
@@ -1566,7 +1575,7 @@ input:focus{
   background-color:#DBDBDB
 }
 
-.cat_paginator .slick-dots li.slick-active{
+.cat_paginator .slick-dots li.slick-active,.cat_paginator2 .slick-dots li.slick-active{
   background-color:black
 }
 
@@ -2604,5 +2613,11 @@ footer{
     -o-object-fit:cover;
     object-fit:cover;
     -o-object-position:center
+  }
+}
+
+@media screen and (max-width: 767px){
+  .main{
+    margin:0
   }
 }

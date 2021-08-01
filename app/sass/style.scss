@@ -338,7 +338,7 @@ input:focus {
     color: white;
 
 }
-.cat_paginator{
+.cat_paginator,.cat_paginator2{
     .slick-dots{
         display: flex !important;
         align-items: center;
@@ -1389,3 +1389,8 @@ color: #ffffff;
     }
 }
 
+@media screen and (max-width: 767px) {
+    .main{
+        margin: 0;
+    }
+}

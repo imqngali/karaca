@@ -66,7 +66,7 @@ jQuery(document).ready(function($){
     })
     $('.multiple_slider2').slick({
         infinite: false,
-        rows: 3,
+        rows: 2,
         slidesPerRow: 4,
         variableWidth: false,
         touchThreshold: 10,
@@ -76,6 +76,39 @@ jQuery(document).ready(function($){
         arrows: true,
         prevArrow: $('.banner-button-prev3'),
         nextArrow: $('.banner-button-next3'),
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings:{
+                    slidesPerRow: 3
+                }
+            },
+            {
+                breakpoint: 990,
+                settings:{
+                    slidesPerRow: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesPerRow: 2
+                }
+            }
+        ]
+    })
+    $('.multiple_slider3').slick({
+        infinite: false,
+        rows: 2,
+        slidesPerRow: 4,
+        variableWidth: false,
+        touchThreshold: 10,
+        centerMode: false,
+        appendDots: $('.cat_paginator3'),
+        dots: true,
+        arrows: true,   
+        prevArrow: $('.banner-button-prev4'),
+        nextArrow: $('.banner-button-next4'),
         responsive: [
             {
                 breakpoint: 1199,

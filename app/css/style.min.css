@@ -1069,7 +1069,7 @@
   z-index:11;
   align-items:center;
   transition:0.4s all;
-  transform:scale(1);
+  transform:scale(0);
   top:0;
   background-color:rgba(0,0,0,0.3)
 }
@@ -1559,13 +1559,13 @@ input:focus{
   color:white
 }
 
-.cat_paginator .slick-dots,.cat_paginator2 .slick-dots{
+.cat_paginator .slick-dots,.cat_paginator2 .slick-dots,.cat_paginator3 .slick-dots{
   display:flex !important;
   align-items:center;
   margin-bottom:0
 }
 
-.cat_paginator .slick-dots li,.cat_paginator2 .slick-dots li{
+.cat_paginator .slick-dots li,.cat_paginator2 .slick-dots li,.cat_paginator3 .slick-dots li{
   margin:0 10px;
   border-radius:100%;
   font-size:0;
@@ -1575,7 +1575,7 @@ input:focus{
   background-color:#DBDBDB
 }
 
-.cat_paginator .slick-dots li.slick-active,.cat_paginator2 .slick-dots li.slick-active{
+.cat_paginator .slick-dots li.slick-active,.cat_paginator2 .slick-dots li.slick-active,.cat_paginator3 .slick-dots li.slick-active{
   background-color:black
 }
 

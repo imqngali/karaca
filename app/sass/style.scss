@@ -65,7 +65,9 @@ html{
 .main-nav, .langs {
 display: inline-block;
 }
-
+.form_send{
+    padding: 20px;
+}
 .main-nav__ul, .langs__ul, .cats {
 list-style-type: none;
 display: flex;
@@ -93,6 +95,9 @@ margin-right: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &>img{
+        cursor: pointer;
+    }
     &_mobile{
         display: none;
         align-items: center;
@@ -221,7 +226,7 @@ input:focus {
 .slick-track{
     display: flex;
 }
-.multiple_slider .slick-slide{
+.m-slider .slick-slide{
     &>div{
         &>div{
             width: 25% !important;
@@ -242,7 +247,7 @@ input:focus {
 
 .main {
     margin: 20px auto 100px auto;
-    padding: 15px;
+    // padding: 15px;
 }
 
 .banner-container {
@@ -1069,7 +1074,7 @@ color: #ffffff;
     }
 }
 @media screen and (max-width: 1199px) {
-    .multiple_slider .slick-slide{
+    .m-slider .slick-slide{
         &>div{
             &>div{
                 width: 30% !important;
@@ -1130,7 +1135,7 @@ color: #ffffff;
             max-width: 1200px;
         }
     }
-    .multiple_slider .slick-slide{
+    .m-slider .slick-slide{
         &>div{
             &>div{
                 width: 45% !important;
@@ -1170,13 +1175,16 @@ color: #ffffff;
         flex-wrap: wrap;
     }
     .shop-grid .product-card{
-        width: 100% !important;
+        width: 47% !important;
         margin-top: 15px !important;
+        &>img{
+            height: 140px;
+        }
     }
     .callback{
         margin: 0;
     }
-    .multiple_slider .slick-slide{
+    .m-slider .slick-slide{
         &>div{
             text-align: center;
             &>div{
@@ -1210,6 +1218,7 @@ color: #ffffff;
     .inner_card{
         // min-width: 220px;
         // width: 22%;
+        padding: 0;
         margin: 5px;
     }
     
@@ -1304,7 +1313,7 @@ color: #ffffff;
     }
 
     .profile_content{
-        padding: 40px 0;
+        padding: 40px 13px;
     }
 
     .profile_content_forgot{
@@ -1350,8 +1359,10 @@ color: #ffffff;
         padding: 30px;
     }
 
-    .callback_wrappper div{
+    .callback_wrappper .email_form{
         align-items: center;
+        // text-align: center;
+        // align-items: flex-start;
     }
 
     .callback_wrappper button{
@@ -1388,9 +1399,45 @@ color: #ffffff;
         -o-object-position: center;
     }
 }
+.filter_mobile{
+    display: none;
+}
 
 @media screen and (max-width: 767px) {
     .main{
         margin: 0;
+    }
+    .filter__top{
+        display: none;
+        background-color: white;
+        padding: 10px 40px;
+        .shop__filter__ul{
+            h4{
+                background: #FAFAFA;
+            }
+            li{
+                background: #FAFAFA;
+            }
+        }
+    }
+    .filter_mobile{
+        display: block;
+        width: 100%;
+        &>div{
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+            span{
+                font-weight: 500;
+            }
+            img{
+                position: absolute;
+                right: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            background: #F9F9F9;
+        }
     }
 }

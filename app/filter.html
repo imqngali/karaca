@@ -66,7 +66,8 @@
                     </div>
                 </div>
                 <div class="header__funcs">
-                    <img id="logo" src="./img/Logo.svg" alt="Karaca Home" />
+                    <a href="/">
+                        <img id="logo" src="./img/Logo.svg" alt="Karaca Home" /></a>
                     <div class="search-form_wrap">
                         <form action="/action_page.php">
                             <input type="search" placeholder="Я ищу" />
@@ -74,8 +75,12 @@
                         </form>
                     </div>
                     <div class="btns">
-                        <img src="./img/shopping-cart.svg" />
-                        <img src="./img/heart.svg" />
+                        <a href="/history.html" class=" contents">
+                            <img src="./img/shopping-cart.svg" />
+                        </a>
+                        <a href="/favourite.html" class="contents">
+                            <img src="./img/heart.svg" />
+                        </a>
                         <div class="login_btn">
                             <img src="./img/person.svg" />
                             <span>Войти</span>
@@ -120,7 +125,7 @@
             </div>
         </nav>
 
-        <main class="main container">
+        <main class="main container filter">
             <!-- --------------------Shop-grid -->
 
             <div class="filter_btns w-full flex justify-end m-auto mb-rem1">
@@ -201,6 +206,12 @@
             </div>
 
             <div class="shop-grid filter_grid filter__inner">
+                <div class="filter_mobile">
+                    <div class="">
+                        <span>Фильтры</span>
+                        <img src="./img/ar_right.svg" alt="">
+                    </div>
+                </div>
                 <div class="filter__top shop__filter">
                     <ul class="shop__filter__ul">
                         <h4
@@ -369,7 +380,7 @@
                         </div>
                     </ul>
                 </div>
-
+                
                 <div class="filter__items">
                     <div class="product-card">
                         <div class="text-right product-card_hover-open">

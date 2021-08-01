@@ -80,8 +80,12 @@
                         </form>
                     </div>
                     <div class="btns">
-                        <img src="./img/shopping-cart.svg" />
-                        <img src="./img/heart.svg" />
+                        <a href="/history.html" class=" contents">
+                            <img src="./img/shopping-cart.svg" />
+                        </a>
+                        <a href="/favourite.html" class="contents">
+                            <img src="./img/heart.svg" />
+                        </a>
                         <div class="login_btn">
                             <img src="./img/person.svg" />
                             <span>Войти</span>
@@ -133,7 +137,7 @@
                     </div>
                 </div>
                 <div class="payment__inner">
-                    <div class="payment__tab1" style="display: flex">
+                    <div class="payment__tab1 payment_tabs" style="display: flex">
                         <div class="payment__items">
                             <div class="payment__header">
                                 <div class="payment__header-title">
@@ -230,10 +234,10 @@
                             <p>Сумма заказа: <span>35 970 тг</span></p>
                             <p>Количество товара: <span>3</span></p>
                             <p>Срок доставки: <span>7-10 дней</span></p>
-                            <button class="payment__button">Продолжить</button>
+                            <button class="payment__button pay_next">Продолжить</button>
                         </div>
                     </div>
-                    <div class="payment__tab2" style="display: block">
+                    <div class="payment__tab2 payment_tabs" style="display: none">
                         <div class="product__info">
                             <div class="tabs">
                                 <a href="#Описание" class="active"
@@ -324,7 +328,7 @@
                                             />
                                         </div>
                                     </div>
-                                    <button class="payment__form-button">
+                                    <button class="payment__form-button pay_next">
                                         Сохранить Адрес
                                     </button>
                                 </form>
@@ -382,21 +386,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="payment__tab3" style="margin-top: 30px;">
+                    <div class="payment__tab3 payment_tabs" style="margin-top: 30px;display: none;">
                         <div class="payment__form-inner3">
                             <span>Выберите способ оплаты</span>
                             <div class="payment__wrapp">
-                                <input type="checkbox" class="checkbox" />
+                                <input type="radio" class="checkbox" name="radio_card"/>
                                 Оплатить картой
                             </div>
                             <div class="payment__wrapp">
-                                <input type="checkbox" class="checkbox" />
+                                <input type="radio" class="checkbox" name="radio_card"/>
                                 Выставить счет на оплату в приложении Kaspi
                             </div>
                             <div class="payment__wrapp">
-                                <input type="checkbox" class="checkbox" />
+                                <input type="radio" class="checkbox" name="radio_card"/>
                                 Оплатить наличными
                             </div>
+                            <button class="payment__button w-auto px-rem2 pay_next">
+                                Оформить заказ
+                            </button>
                         </div>
                     </div>
                 </div>

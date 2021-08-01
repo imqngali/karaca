@@ -202,4 +202,14 @@ jQuery(document).ready(function($){
         $($('.modal_auth_inner_content .tab1')[cur_index]).css("display","block");
         states.clickedTabs = cur_index; 
     })
+    $('.filter_mobile').click(function(){
+        $('.filter__top').toggle()
+    })
+
+    $('.pay_next').click(function (e) {
+        e.preventDefault()
+        const cur_index = $('.pay_next').index(this);
+        $('.payment_tabs').eq(cur_index + 1).toggle()
+        $('.payment_tabs').eq(cur_index).toggle()
+    })
 })

@@ -59,3 +59,17 @@
         }
     }
 }
+@media screen and(max-width: 767px) {
+    .vacancies{
+        &_banner{
+            padding: 20px 25px;
+        }
+        &_form{
+            margin: 20px 0;
+            &>h1{
+                font-size: 1.8rem;
+            }
+            padding: 20px 25px;
+        }
+    }
+}

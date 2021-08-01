@@ -81,8 +81,8 @@
                         </form>
                     </div>
                     <div class="btns">
-                        <img src="./img/shopping-cart.svg" />
-                        <img src="./img/heart.svg" />
+                        <a href="/history.html" class="contents"><img src="./img/shopping-cart.svg" /></a>
+                        <a href="/favourite.html" class="contents"> <img src="./img/heart.svg" /></a>
                         <div class="login_btn">
                             <img src="./img/person.svg" />
                             <span>Войти</span>
@@ -403,7 +403,7 @@
             <h1>Бестселлеры недели</h1>
 
             <div class="catalog container">
-                <div class="multiple_slider w-full overflow-hidden">
+                <div class="multiple_slider m-slider w-full overflow-hidden">
                     <div class="relative inner_card">
                         <div class="product-card">
                             <div class="text-right product-card_hover-open">
@@ -1081,7 +1081,7 @@
             <h1>Актуальные скидки</h1>
 
             <div class="catalog container relative">
-                <div class="multiple_slider2 w-full overflow-hidden">
+                <div class="multiple_slider2 m-slider w-full overflow-hidden">
                     <div class="relative inner_card">
                         <div class="product-card">
                             <div class="text-right product-card_hover-open">
@@ -1732,7 +1732,7 @@
             <h1>Актуальные скидки</h1>
 
             <div class="catalog container relative">
-                <div class="multiple_slider3 w-full overflow-hidden">
+                <div class="multiple_slider3 m-slider w-full overflow-hidden">
                     <div class="relative inner_card">
                         <div class="product-card">
                             <div class="text-right product-card_hover-open">
@@ -2371,10 +2371,10 @@
             </div>
 
             <h1>Оставьте нам свою почту для рассылок с акциями и скидок!</h1>
-            <div class="container">
-                <div class="callback_wrappper mt-5">
+            <div class="container form_send">
+                <div class="callback_wrappper">
                     <form action="/action_page.php" method="get">
-                        <div>
+                        <div class="email_form">
                             <input
                                 type="text"
                                 placeholder="Ваш e-mail"
@@ -2382,7 +2382,7 @@
                             /><br />
                             <button type="submit">Подписаться</button>
                         </div>
-                        <div class="flex items-center relative mt-3.2rem">
+                        <div class="flex items-center relative mt-3.2rem phone:items-start">
                             <input
                                 type="checkbox"
                                 required
@@ -2397,6 +2397,7 @@
                                     font-medium
                                     leading-1rem
                                     m-auto
+                                    phone:text-0.9rem
                                 "
                             >
                                 Я согласен на обработку персональных данных и с

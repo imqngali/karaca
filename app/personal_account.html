@@ -300,62 +300,78 @@
                         </div>
                     </div>
                     <div class="profile_content">
-                        <div class="profile_content_header">
+                        <div class="profile_content_inner grid grid-cols-2 gap-4 fromTabletToPhone:grid-cols-1">
+                            <div class="profile_content_name">
+                                <h3>Имя</h3>
+                                <input type="text"> 
+                            </div>
+                            <div class="profile_content_surname">
+                                <h3>Фамилия</h3>
+                                <input type="text"> 
+                            </div>
+                            <div class="profile_content_number">
+                                <h3>Номер телефона</h3>
+                                <input type="text"> 
+                            </div>
+                            <div class="profile_content_email">
+                                <h3>E-mail</h3>
+                                <input type="text"> 
+                            </div>
+                        </div>
+                        <div class="profile_btn">
+                            <a href="#">Сохранить</a>
+                        </div>
+                        <div class="profile_content_inner grid grid-cols-2 gap-4 fromTabletToPhone:grid-cols-1">
+                            <div class="profile_content_sity">
+                                <h3>Город</h3>
+                                <input type="text"> 
+                            </div>
+                            <div class="profile_content_region">
+                                <h3>Район</h3>
+                                <input type="text"> 
+                            </div>
+                            <div class="profile_content_street">
+                                <h3>Улица</h3>
+                                <input type="text"> 
+                            </div>
                             <div>
-                                <img src="./img/profile_image.svg" alt="" />
                             </div>
-                            <div class="profile_content_header_info">
-                                <h3>Галия Турсынбай</h3>
-                                <span>@galiya_tursunbai</span>
-                            </div>
-                        </div>
-                        <div class="profile_content_detail">
-                            <div class="profile_content_detail_number">
-                                <h3>Номер телефона:</h3>
-                                <span>+7 707 171 82 67</span>
-                            </div>
-                            <div class="profile_content_detail_adress">
-                                <h3>Адрес доставки::</h3>
-                                <div class="profile_content_detail_adress_list">
-                                    <div
-                                        class="
-                                            profile_content_detail_adress_list_inner
-                                        "
-                                    >
-                                        <p>Казахстан</p>
-                                        <p>050046</p>
-                                        <p>Алматы</p>
-                                        <p>Бостандыкский р-н</p>
-                                        <p>
-                                            ул. Шевченко, 165 б, кв. 22, под. 1,
-                                            дмф. 22, эт. 8
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <button>Редактировать</button>
-                                    </div>
+                            <div class="profile_content_apartment flex">
+                                <div class="profile_content_apartment-numer">
+                                    <h3>Квартира</h3>
+                                    <input type="text">
                                 </div>
-                                <div class="profile_content_detail_adress_list">
-                                    <div
-                                        class="
-                                            profile_content_detail_adress_list_inner
-                                        "
-                                    >
-                                        <p>Казахстан</p>
-                                        <p>050046</p>
-                                        <p>Алматы</p>
-                                        <p>Бостандыкский р-н</p>
-                                        <p>
-                                            ул. Шевченко, 165 б, кв. 22, под. 1,
-                                            дмф. 22, эт. 8
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <button>Редактировать</button>
-                                    </div>
+                                <div class="profile_content_floor">
+                                    <h3>Этаж</h3>
+                                    <input type="text">
                                 </div>
                             </div>
+                            <div>
+                            </div>
                         </div>
+
+                        <div class="profile_info">
+                            
+                            <div class="profile_info_headig flex">
+                                
+                                <h3>Дополнительная информация</h3>
+
+                                <img class="profile_info_arrow" src="./img/profile_btn.svg">
+
+                            </div>
+
+                            <textarea class="profile_textarea"></textarea>
+
+                            <div class="profile_info_btn flex fromTabletToPhone:block">
+                                
+                                <div><a href="#">Сохранить</a></div>
+
+                                <div><a href="#">Добавить адрес</a></div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>

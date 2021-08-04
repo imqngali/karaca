@@ -6,7 +6,7 @@ let gulp = require('gulp'),
   rename = require('gulp-rename'),
   del = require('del'),
   autoprefixer = require('gulp-autoprefixer');
-  postcss = require('gulp-postcss')
+  postcss = require('gulp-postcss');
 
 gulp.task('clean', async function () {
   del.sync('dist')
@@ -17,14 +17,7 @@ gulp.task('sass', function () {
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer({
       overrideBrowserslis: ['last 8 versions']
-    }))   
-    .pipe(
-      postcss([
-        require('postcss-import'),
-        require('tailwindcss'),
-        require('autoprefixer')
-      ])
-    )
+    })) 
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({ stream: true }))
@@ -40,13 +33,6 @@ gulp.task('css', function () {
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/sass'))
-    .pipe(
-      postcss([
-        require('postcss-import'),
-        require('tailwindcss'),
-        require('autoprefixer')
-      ])
-    )
     .pipe(browserSync.reload({ stream: true }))
 });
 

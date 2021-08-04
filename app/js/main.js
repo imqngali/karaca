@@ -213,3 +213,9 @@ jQuery(document).ready(function($){
         $('.payment_tabs').eq(cur_index).toggle()
     })
 })
+
+$(document).ready(function(){
+    $('.profile_info_arrow').click(function(event) {
+        $('.profile_textarea').toggleClass('activeEl');
+    });
+});

@@ -121,6 +121,7 @@ $main_color: #00bcd4;
     }
     &_info_btn {
         div a{
+            display: inline-block;
             text-decoration: none;
             color: #fff;
             border: 1px solid #00BCD4;

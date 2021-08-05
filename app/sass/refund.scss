@@ -1,0 +1,53 @@
+.refund {
+	background-color: #fff;
+	border-radius: 25px;
+	-webkit-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+	&_inner {
+		padding: 60px 40px;
+
+		p{
+			font-size: 21px;
+			line-height: 30px;
+			margin: 0;
+			padding-top: 20px;
+		}
+
+		p:last-child{
+			font-size: 16px;
+		}
+
+		p > span{
+			color: #00BCD4;
+		}
+	}
+	&_heading {
+		text-align: center;
+		font-size: 36px;
+		line-height: 44px;
+		padding-bottom: 36px;
+	}
+	&_info {
+		padding-top: 20px;
+
+		i{
+			padding-top: 3px;
+		}
+
+		i:before{
+			content: "";
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background-color: #00BCD4;
+			border-radius: 50%;
+		}
+
+		span{
+			font-size: 21px;
+			line-height: 30px;
+			margin-left: 20px;
+		}
+	}
+}

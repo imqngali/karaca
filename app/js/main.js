@@ -219,3 +219,13 @@ $(document).ready(function(){
         $('.profile_textarea').toggleClass('activeEl');
     });
 });
+
+$(document).ready(function(){
+    $('.about_slider').slick({
+        arrows:true,
+        prevArrow:$('.about_slider_left_arrow'),
+        nextArrow:$('.about_slider_right_arrow'),
+        dots:true,
+        appendDots:$('.about_slider_dots'),
+    });
+});

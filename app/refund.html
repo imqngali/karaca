@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <link rel="stylesheet" href="./css/mytailwind.css" />
+        <link rel="icon" type="image/png" href="./img/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Main</title>
+    </head>
+    <body>
+        <div class="modal_auth">
+            <div class="modal_auth_inner">
+                <div class="modal_auth_inner_tab">
+                    <div class="current">
+                        <span>Вход</span>
+                    </div>
+                    <div>
+                        <span>Регистрация</span>
+                    </div>
+                </div>
+                <div class="modal_auth_inner_content">
+                    <div class="tab1 sdas">
+                        <div class="google_block">
+                            <img src="./img/google.svg" alt="" />
+                            <span>Google </span>
+                        </div>
+                        <form action="post">
+                            <div>
+                                <p>Ваша почта</p>
+                                <input
+                                    type="email"
+                                    placeholder="info@alux.kz"
+                                />
+                            </div>
+                            <div>
+                                <p>Пароль</p>
+                                <input
+                                    type="text"
+                                    placeholder="Ваш текущий пароль"
+                                />
+                            </div>
+                            <p>Забыли пароль?</p>
+                            <button>Войти</button>
+                        </form>
+                        <p>
+                            Входя в Личный кабинет, вы принимаете <br />
+                            Условия использования сайта
+                        </p>
+                    </div>
+                    <div style="display: none" class="tab1">
+                        <div class="google_block">
+                            <img src="./img/google.svg" alt="" />
+                            <span>Google </span>
+                        </div>
+                        <form action="post">
+                            <div>
+                                <p>Ваша почта</p>
+                                <input
+                                    type="email"
+                                    placeholder="info@alux.kz"
+                                />
+                            </div>
+                            <div>
+                                <p>Придумайте пароль</p>
+                                <input
+                                    type="text"
+                                    placeholder="Придумайте пароль по требованиям"
+                                />
+                            </div>
+                            <ul>
+                                <li>Минимум одна заглавная буква</li>
+                                <li>Минимум должно быть 8 символов</li>
+                                <li>Минимум одна цифра</li>
+                                <li>Специальные символы</li>
+                            </ul>
+                            <div>
+                                <p>Повторите пароль</p>
+                                <input
+                                    type="text"
+                                    placeholder="Повторите ваш пароль"
+                                />
+                            </div>
+                            <p>Забыли пароль?</p>
+                            <button>Войти</button>
+                        </form>
+                        <p>
+                            Входя в Личный кабинет, вы принимаете <br />
+                            Условия использования сайта
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header">
+            <div class="header__container container">
+                <div class="header__main-links">
+                    <div class="main-nav">
+                        <ul class="main-nav__ul">
+                            <li>О нас</li>
+                            <li>Доставка и оплата</li>
+                            <li>Связаться с нами</li>
+                        </ul>
+                    </div>
+                    <div class="langs">
+                        <ul class="langs__ul">
+                            <li>Қаз</li>
+                            <li style="background: #00bcd4; color: white">
+                                Рус
+                            </li>
+                            <li>Eng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__main-links_mobile">
+                    <div>
+                        <img id="logo" src="./img/Logo.svg" alt="Karaca Home" />
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center">
+                            <img
+                                src="./img/blue_burger.svg"
+                                alt=""
+                                class="mr-rem1 inline-block"
+                            />
+                            <span class="text-main_color text-sm font-semibold"
+                                >Войти</span
+                            >
+                        </div>
+                        <div class="header__main-links_mobile_burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__funcs">
+                    <img id="logo" src="./img/Logo.svg" alt="Karaca Home" />
+                    <div class="search-form_wrap">
+                        <form action="/action_page.php">
+                            <input type="search" placeholder="Я ищу" />
+                            <img type="submit" src="./img/search.svg" />
+                        </form>
+                    </div>
+                    <div class="btns">
+                        <a href="/history.html" class=" contents">
+                            <img src="./img/shopping-cart.svg" />
+                        </a>
+                        <a href="/favourite.html" class="contents">
+                            <img src="./img/heart.svg" />
+                        </a>
+                        <div class="login_btn">
+                            <img src="./img/person.svg" />
+                            <span>Войти</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__funcs_mobile">
+                    <div class="search-form_wrap">
+                        <form action="/action_page.php">
+                            <input type="search" placeholder="Я ищу" />
+                            <img type="submit" src="./img/search.svg" />
+                        </form>
+                    </div>
+                    <div class="btns">
+                        <img src="./img/shopping-cart.svg" />
+                    </div>
+                </div>
+
+                <div class="header__cats">
+                    <ul class="cats">
+                        <li><a href="/index.html" style="color: #00bcd4">Главная</a></li>
+                        <li><a href="/filter.html">Новинки</a></li>
+                        <li><a href="#">Кухня</a></li>
+                        <li><a href="#">Посуда</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                        <li><a href="#">Текстиль для дома</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="./img/sales_fire.svg"
+                                    style="margin-right: 10px; height: 18px"
+                                />Скидки</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="refund container">
+
+                <div class="refund_inner">
+
+                    <div class="refund_heading">Возврат покупки</div>
+
+                    <div class="refund_info flex">
+                        <i></i>
+                        <span><strong>Покупатель вправе обменять или вернуть</strong> Товар надлежащего качества, если он не был в употреблении, сохранены его товарный вид, потребительские свойства, пломбы, ярлыки, а также документ, подтверждающий факт приобретения Товара (фискальный чек), в течение четырнадцати календарных дней со дня приобретения товара.</span>
+                    </div>
+
+                    <div class="refund_info flex">
+                        <i></i>
+                        <span>Претензии к качеству приобретенного Товара, возникшие после получения и оплаты Товара, рассматриваются в соответствии с Законом РК «О защите прав потребителей» и гарантийными обязательствами Продавца (если таковые имеются). В связи с этим, приобретение Товара с доставкой не дает Покупателю права требования от Продавца доставки приобретенного Товара в целях гарантийного обслуживания или замены, и не дает возможности осуществлять гарантийное обслуживание или замену Товара посредством выезда к Покупателю. Расходы, связанные с доставкой и (или) возвратом/обменом Товара несет Покупатель.</span>
+                    </div>
+
+                    <div class="refund_info flex">
+                        <i></i>
+                        <span><strong>Товар является надлежащим образом сертифицированным</strong> (декларированным) и полностью соответствует требованиям по безопасности, установленным в Республике Казахстан и Таможенном союзе/ЕАЭС.</span>
+                    </div>
+
+                    <p><strong>Покупатель вправе отказаться от Товара надлежащего качества</strong> в любое время до его передачи Покупателю, а после передачи Товара — <strong>в течение четырнадцати дней,</strong> в порядке и на условиях, предусмотренных Законом «О защите прав потребителей» и настоящей инструкцией.</p>
+
+                    <p>Возврат товара, в случаях, предусмотренных Законом, производится за счет Покупателя по адресам самовывоза, указанных во вкладке Связаться с нами. При возврате товара надлежащего качества, Продавец возвращает Покупателю сумму, уплаченную за Товар в соответствии с договором купли-продажи. Возврат сумм, оплаченных за товар по безналичному расчету, осуществляется в порядке и на условиях, предусмотренных банком-партнером.</p>
+
+                    <p>При необходимости оформить возврат покупки, покупателю необхимо ознакомиться с указанными правилами, скачать <span>Форму для возрата покупки,</span> заполнить вручную и отправить скан-версию на нашу электронную почту.</p>
+
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_cont wrapper">
+                    <div class="footer_col">
+                        <img src="./img/logo_white.svg" alt="Karaca Home" />
+                        <div class="insta_block">
+                            <div class="insta_block_title">
+                                <img src="./img/instagram.svg" />
+                                Подпишитесь на нас в Instagram!
+                            </div>
+                            <div class="insta_info">
+                                <a href="#">@karaca_kz</a>
+                                <a href="#">@karaca_almaty</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_col">
+                        <h4>О компании</h4>
+                        <ul>
+                            <li>О нас</li>
+                            <li>Контакты</li>
+                            <li>Доставка и оплата</li>
+                            <li>Хотите работать с нами?</li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Категории</h4>
+                        <ul>
+                            <li>Новинки</li>
+                            <li>Кухня</li>
+                            <li>Посуда</li>
+                            <li>Бытовая техника</li>
+                            <li>Текстиль для дома</li>
+                            <li>Аксессуары</li>
+                        </ul>
+                    </div>
+                    <div class="footer_col">
+                        <h4>Акционные пакеты</h4>
+                        <ul>
+                            <li>Бытовая техника</li>
+                            <li>Аксессуары для дома</li>
+                            <li>Наборы и комплекты</li>
+                            <li>Столовый сервиз</li>
+                            <li>Детская комната</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- --------------------------------SCRIPTS -->
+
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="./js/libs.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
